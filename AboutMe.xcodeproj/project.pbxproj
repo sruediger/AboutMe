@@ -94,10 +94,10 @@
 		F2BD66F92818B7A6009701ED /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
-				F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */,
-				F2BD66FC2818B7A6009701ED /* ContentView.swift */,
-				F2BD66FE2818B7A7009701ED /* Assets.xcassets */,
-				F2BD67002818B7A7009701ED /* Preview Content */,
+				F2BD67272818B7C9009701ED /* Shared */,
+				F2BD67242818B7B7009701ED /* Model */,
+				F2BD67262818B7C3009701ED /* View */,
+				F2BD67252818B7BF009701ED /* ViewModel */,
 			);
 			path = AboutMe;
 			sourceTree = "<group>";
@@ -125,6 +125,38 @@
 				F2BD67172818B7A7009701ED /* AboutMeUITestsLaunchTests.swift */,
 			);
 			path = AboutMeUITests;
+			sourceTree = "<group>";
+		};
+		F2BD67242818B7B7009701ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2BD67252818B7BF009701ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F2BD67262818B7C3009701ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD66FC2818B7A6009701ED /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2BD67272818B7C9009701ED /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */,
+				F2BD66FE2818B7A7009701ED /* Assets.xcassets */,
+				F2BD67002818B7A7009701ED /* Preview Content */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,7 +448,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AboutMe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AboutMe/Shared/Preview Content\"";
 				DEVELOPMENT_TEAM = PCUZ2B6R6H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,7 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AboutMe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AboutMe/Shared/Preview Content\"";
 				DEVELOPMENT_TEAM = PCUZ2B6R6H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
