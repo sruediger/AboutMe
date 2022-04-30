@@ -11,8 +11,7 @@ import SwiftUI
 struct AboutMeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .preferredColorScheme(.dark)
+            MainScreenView()
         }
     }
 }
