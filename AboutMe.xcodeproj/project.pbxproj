@@ -25,7 +25,6 @@
 		F22E08822818EA4900EB4768 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08812818EA4900EB4768 /* String+Utils.swift */; };
 		F22E08842818F2F300EB4768 /* ProgrammingLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08832818F2F300EB4768 /* ProgrammingLanguages.swift */; };
 		F22E08862818F2FA00EB4768 /* MainScreenSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */; };
-		F22E08882818F4ED00EB4768 /* CollapsibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08872818F4ED00EB4768 /* CollapsibleView.swift */; };
 		F22E088C28197DF100EB4768 /* ProgrammingLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E088B28197DF100EB4768 /* ProgrammingLanguagesView.swift */; };
 		F22E088E281A1E1000EB4768 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E088D281A1E1000EB4768 /* NavigationConfigurator.swift */; };
 		F2BD66FB2818B7A6009701ED /* AboutMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */; };
@@ -73,7 +72,6 @@
 		F22E08812818EA4900EB4768 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 		F22E08832818F2F300EB4768 /* ProgrammingLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguages.swift; sourceTree = "<group>"; };
 		F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenSubview.swift; sourceTree = "<group>"; };
-		F22E08872818F4ED00EB4768 /* CollapsibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleView.swift; sourceTree = "<group>"; };
 		F22E088B28197DF100EB4768 /* ProgrammingLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguagesView.swift; sourceTree = "<group>"; };
 		F22E088D281A1E1000EB4768 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
 		F2BD66F72818B7A6009701ED /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,7 +133,6 @@
 		F210EE59281E0CAE0091951E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				F22E08872818F4ED00EB4768 /* CollapsibleView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -387,7 +384,6 @@
 				F22E08862818F2FA00EB4768 /* MainScreenSubview.swift in Sources */,
 				F2BD66FD2818B7A6009701ED /* MainScreenView.swift in Sources */,
 				F2BD66FB2818B7A6009701ED /* AboutMeApp.swift in Sources */,
-				F22E08882818F4ED00EB4768 /* CollapsibleView.swift in Sources */,
 				F210EE3E281C37A70091951E /* ComponentFactory.swift in Sources */,
 				F210EE39281ACA980091951E /* AvailableContacts.swift in Sources */,
 				F210EE4B281CAFA20091951E /* WebViewRepresentable.swift in Sources */,
