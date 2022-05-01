@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal protocol WebViewRepresentable {
-    
+internal protocol WebViewRepresentable {    
+    var url: URL { get }
     
 }

@@ -11,3 +11,13 @@ internal protocol ViewFactory {
     
     
 }
+
+
+struct ViewCreator: ViewFactory {
+    
+    
+    
+    
+    
+    
+}
