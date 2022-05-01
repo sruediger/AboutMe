@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ProgrammingLanguagesView: View {
-    @State private var isPresented: Bool = false 
         
     var body: some View {
         self.createLanguagesView()
@@ -17,32 +16,6 @@ struct ProgrammingLanguagesView: View {
 
 extension ProgrammingLanguagesView {
     
-    // - MARK: Deprecated
-    @ViewBuilder private func oldImplementationView() -> some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 20)
-                .fill(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.0862745098, green: 0.1019607843, blue: 0.1450980392, alpha: 1)), Color("Colors/background"), Color(#colorLiteral(red: 0.07058823529, green: 0.07058823529, blue: 0.07058823529, alpha: 1))]), startPoint: .topLeading, endPoint: .bottomTrailing))
-         //       .opacity(0.25)
-                .overlay(
-                    VStack {
-                        HStack {
-                            Spacer()
-                            Button(action: {
-                                self.isPresented = false
-                            }) {
-                                Image(systemName: "x.circle.fill")
-                                    .resizable()
-                                    .frame(width: 25, height: 25)
-                                    .foregroundColor(.white)
-                                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 10))
-                            }
-                        }
-                        self.createLanguagesView()
-                           // .offset(x: .zero, y: -5)
-                    }
-                )//.foregroundColor(.secondary)
-        }.frame(/*width: UIScreen.main.bounds.width, */height: UIScreen.main.bounds.height * 0.215)
-    }
     
     @ViewBuilder private func createLanguagesView() -> some View {
         ScrollView(.horizontal, showsIndicators: false) {
