@@ -15,6 +15,9 @@ struct ModalView: View {
         if let subviewContent = subview {
             ZStack {
                 Color.black.opacity(0.45).ignoresSafeArea()
+                    .onTapGesture { /// Dismiss the presented modal when the background is tapped
+                        self.subview = nil
+                    }
                 
                 let windowSize = viewModel.getSizeOf(content: subview)
 
