@@ -26,6 +26,7 @@
 		F22E08862818F2FA00EB4768 /* MainScreenSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */; };
 		F22E088C28197DF100EB4768 /* ProgrammingLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E088B28197DF100EB4768 /* ProgrammingLanguagesView.swift */; };
 		F22E088E281A1E1000EB4768 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E088D281A1E1000EB4768 /* NavigationConfigurator.swift */; };
+		F295BECC2820D2B600B30346 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295BECB2820D2B600B30346 /* HapticsManager.swift */; };
 		F2BD66FB2818B7A6009701ED /* AboutMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */; };
 		F2BD66FD2818B7A6009701ED /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66FC2818B7A6009701ED /* MainScreenView.swift */; };
 		F2BD66FF2818B7A7009701ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BD66FE2818B7A7009701ED /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 		F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenSubview.swift; sourceTree = "<group>"; };
 		F22E088B28197DF100EB4768 /* ProgrammingLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguagesView.swift; sourceTree = "<group>"; };
 		F22E088D281A1E1000EB4768 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
+		F295BECB2820D2B600B30346 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		F2BD66F72818B7A6009701ED /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeApp.swift; sourceTree = "<group>"; };
 		F2BD66FC2818B7A6009701ED /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				F210EE52281D875D0091951E /* Applications.swift */,
 				F210EE54281D87680091951E /* TechSkills.swift */,
 				F210EE5F281EC4F40091951E /* ExperienceItem.swift */,
+				F295BECB2820D2B600B30346 /* HapticsManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				F2BD66FD2818B7A6009701ED /* MainScreenView.swift in Sources */,
 				F2BD66FB2818B7A6009701ED /* AboutMeApp.swift in Sources */,
 				F210EE3E281C37A70091951E /* ComponentFactory.swift in Sources */,
+				F295BECC2820D2B600B30346 /* HapticsManager.swift in Sources */,
 				F210EE39281ACA980091951E /* AvailableContacts.swift in Sources */,
 				F210EE4B281CAFA20091951E /* WebViewRepresentable.swift in Sources */,
 				F22E088C28197DF100EB4768 /* ProgrammingLanguagesView.swift in Sources */,
