@@ -15,7 +15,6 @@
 		F210EE46281C9AF20091951E /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE45281C9AF20091951E /* ModalView.swift */; };
 		F210EE48281CA9960091951E /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE47281CA9960091951E /* ModalViewModel.swift */; };
 		F210EE4B281CAFA20091951E /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE4A281CAFA20091951E /* WebViewRepresentable.swift */; };
-		F210EE4D281CB1810091951E /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE4C281CB1810091951E /* ViewFactory.swift */; };
 		F210EE4F281D62DC0091951E /* HorizontalCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE4E281D62DC0091951E /* HorizontalCarouselView.swift */; };
 		F210EE51281D83A60091951E /* AnimatableScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE50281D83A60091951E /* AnimatableScroll.swift */; };
 		F210EE53281D875D0091951E /* Applications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE52281D875D0091951E /* Applications.swift */; };
@@ -62,7 +61,6 @@
 		F210EE45281C9AF20091951E /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		F210EE47281CA9960091951E /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
 		F210EE4A281CAFA20091951E /* WebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRepresentable.swift; sourceTree = "<group>"; };
-		F210EE4C281CB1810091951E /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		F210EE4E281D62DC0091951E /* HorizontalCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCarouselView.swift; sourceTree = "<group>"; };
 		F210EE50281D83A60091951E /* AnimatableScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableScroll.swift; sourceTree = "<group>"; };
 		F210EE52281D875D0091951E /* Applications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applications.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 		F210EE49281CAF680091951E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				F210EE4C281CB1810091951E /* ViewFactory.swift */,
 				F210EE3D281C37A60091951E /* ComponentFactory.swift */,
 				F210EE4A281CAFA20091951E /* WebViewRepresentable.swift */,
 				F210EE50281D83A60091951E /* AnimatableScroll.swift */,
@@ -128,13 +125,6 @@
 				F2BD66FC2818B7A6009701ED /* MainScreenView.swift */,
 			);
 			path = MainScreen;
-			sourceTree = "<group>";
-		};
-		F210EE59281E0CAE0091951E /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		F22E08802818EA3A00EB4768 /* Extensions */ = {
@@ -231,7 +221,6 @@
 		F2BD67262818B7C3009701ED /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F210EE59281E0CAE0091951E /* Components */,
 				F210EE58281E0C950091951E /* MainScreen */,
 				F22E088B28197DF100EB4768 /* ProgrammingLanguagesView.swift */,
 				F210EE45281C9AF20091951E /* ModalView.swift */,
@@ -397,7 +386,6 @@
 				F210EE46281C9AF20091951E /* ModalView.swift in Sources */,
 				F22E08822818EA4900EB4768 /* String+Utils.swift in Sources */,
 				F210EE51281D83A60091951E /* AnimatableScroll.swift in Sources */,
-				F210EE4D281CB1810091951E /* ViewFactory.swift in Sources */,
 				F22E088E281A1E1000EB4768 /* NavigationConfigurator.swift in Sources */,
 				F22E08842818F2F300EB4768 /* ProgrammingLanguages.swift in Sources */,
 				F210EE57281DF9B20091951E /* BlurredRectangleView.swift in Sources */,
