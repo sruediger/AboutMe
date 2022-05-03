@@ -8,7 +8,7 @@
 import Foundation
 
 @frozen internal enum TechSkills: String, Identifiable, CaseIterable, CustomStringConvertible, AnimatableScroll {
-    case appStore, xcode, testflight, swiftUI, UIKit, coreData, git, jenkins, linux, SQLite, mySQL, postgresql, mongoDB, figma, photoshop
+    case appStore, xcode, testflight, swiftUI, UIKit, coreData, git, jenkins, linux, SQLite, mySQL, postgresql, mongoDB, HTML, CSS, bootstrap, react, JSON, XML, figma, photoshop
         
     internal var id: String { self.description }
     
@@ -22,7 +22,7 @@ import Foundation
     
     internal static var iOSDevelopment: [AnimatableScroll] { [Self.appStore, Self.xcode, Self.testflight, Self.UIKit, Self.swiftUI, Self.coreData] }
     
-    internal static var generalDevelopment: [AnimatableScroll] { [Self.linux, Self.git, Self.jenkins] }
+    internal static var generalDevelopment: [AnimatableScroll] { [Self.linux, Self.git, Self.JSON, Self.XML, Self.HTML, Self.CSS, Self.bootstrap, Self.react, Self.jenkins] }
     
     internal static var databases: [AnimatableScroll] { [Self.SQLite, Self.mySQL, Self.postgresql, Self.mongoDB] }
     
