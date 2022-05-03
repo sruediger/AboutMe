@@ -51,11 +51,8 @@ extension ModalView {
                 VStack(alignment: .leading, spacing: 10) {
                     switch self.subview {
                         case .skills: self.skillsView()
-                        case .languages: HorizontalCarouselView(items: ProgrammingLanguages.allItems) { tappedLanguageIndex in
-                            // - MARK: TODO Implementation
-                            print("tapped \(ProgrammingLanguages.allCases[tappedLanguageIndex])")
-                        }
-                    case .experience: self.experienceView().padding(.leading, 12.5)
+                        case .languages: self.languagesView()
+                        case .experience: self.experienceView().padding(.leading, 12.5)
                         case .apps: self.appView()
                         case .curiosities: self.createCuriositiesView()
                         case .contact: self.contactsView()
@@ -67,6 +64,13 @@ extension ModalView {
             }.cornerRadius(28)
         }.sheet(isPresented: $viewModel.webView.show) {
             WebView(url: viewModel.webView.contentURL)
+        }
+    }
+    
+    @ViewBuilder private func languagesView() -> some View {
+        HorizontalCarouselView(items: ProgrammingLanguages.allItems) { tappedLanguageIndex in
+            // - MARK: TODO Implementation
+            print("tapped \(ProgrammingLanguages.allCases[tappedLanguageIndex])")
         }
     }
     
@@ -189,7 +193,7 @@ extension ModalView {
     }
     
     @ViewBuilder private func createCuriositiesView() -> some View {
-        ComponentCreator.create(plainListContent: ["I have been studying programming since my adolescence and have learned most of the programming languages I know outside of university, some even before. ", "I made the initial version of the Secret.ly app all by myself in less than a month and a half.", "When I was a teenager I've worked in a hardware store with technical assistance and support, besides having spent some time doing freelance graphic design jobs. "], withBulletPoint: true, customFont: .callout)
+        ComponentCreator.create(plainListContent: ["I have been studying programming since my adolescence and have learned most of the programming languages I know outside of university, some even before. ", "I made the initial version of the Secret.ly app all by myself in less than a month and a half.", "When I was a teenager I've worked in a hardware store with technical assistance and support, besides having spent some time doing freelance graphic design jobs. "], withBulletPoint: true, customFont: .subheadline)
             .multilineTextAlignment(.leading)
     }
     
@@ -209,6 +213,6 @@ extension ModalView {
 
 struct ModalView_Previews: PreviewProvider {
     static var previews: some View {
-        ModalView(subview: .constant(.skills))
+        ModalView(subview: .constant(.languages))
     }
 }
