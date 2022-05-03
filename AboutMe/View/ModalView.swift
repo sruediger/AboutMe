@@ -170,8 +170,8 @@ extension ModalView {
     }
 
     @ViewBuilder private func skillsView() -> some View {
-        ForEach(0..<2) { row in
-            let label: String = (row == 0 ? "Technical skills" : "Soft skills")
+        ForEach(0..<5) { row in
+            let label: String = viewModel.getSkillsTitle(of: row)
             
             Text(label)
                 .font(.system(.title2, design: .rounded))
@@ -179,10 +179,12 @@ extension ModalView {
                 .foregroundColor(.secondary)
                 .padding(.leading, 15)
 
-            if row == 0 {
-                HorizontalCarouselView(items: TechSkills.allItems) { tappedSkillIndex in
-                    
-                    // - MARK: TODO Implementation
+            if row <= 3 {
+                if let items = viewModel.getSkillsItems(of: row) {
+                    HorizontalCarouselView(items: items) { tappedSkillIndex in
+                        // - MARK: TODO Implementation
+                        
+                    }
                 }
             }else {
                 let softSkills: [String] = ["Team work", "Communication", "Problem Solving", "Organization", "Curiosity", "Creativity", "Perseverance", "Resourcefulness"]
@@ -213,6 +215,6 @@ extension ModalView {
 
 struct ModalView_Previews: PreviewProvider {
     static var previews: some View {
-        ModalView(subview: .constant(.languages))
+        ModalView(subview: .constant(.skills))
     }
 }
