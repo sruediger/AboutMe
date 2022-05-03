@@ -137,12 +137,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F295BECF2821B14F00B30346 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD670A2818B7A7009701ED /* AboutMeTests */,
+				F2BD67142818B7A7009701ED /* AboutMeUITests */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
 		F2BD66EE2818B7A6009701ED = {
 			isa = PBXGroup;
 			children = (
 				F2BD66F92818B7A6009701ED /* AboutMe */,
-				F2BD670A2818B7A7009701ED /* AboutMeTests */,
-				F2BD67142818B7A7009701ED /* AboutMeUITests */,
+				F295BECF2821B14F00B30346 /* UnitTests */,
 				F2BD66F82818B7A6009701ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -181,8 +189,8 @@
 		F2BD670A2818B7A7009701ED /* AboutMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				F2BD670B2818B7A7009701ED /* AboutMeTests.swift */,
 				F295BECD2821942D00B30346 /* TestDummy.swift */,
+				F2BD670B2818B7A7009701ED /* AboutMeTests.swift */,
 			);
 			path = AboutMeTests;
 			sourceTree = "<group>";
