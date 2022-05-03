@@ -15,7 +15,7 @@ extension AboutMeTests {
         print("Trying to load all AboutMeApp assets...")
         if let assets = self.dummy?.assets {
             assets.forEach { XCTAssertNotNil($0) }
-        }else { XCTAssertNil(nil); }
+        }else { XCTAssertNil(nil) }
     }
     
     /// Test if the URLs used by the app are valid
@@ -23,12 +23,13 @@ extension AboutMeTests {
         print("Trying to load all Sergio's contacts & apps URLs...")
         if let urls = self.dummy?.URLs {
             urls.forEach { XCTAssertNotNil($0) }
-        }else { XCTAssertNil(nil); }
+        }else { XCTAssertNil(nil) }
     }
     
 }
 
 class AboutMeTests: XCTestCase {
+    /// Object used as the main UnitTests controller and data source
     private var dummy: TestDummy? = nil
     
     override func setUp() {
