@@ -22,12 +22,14 @@ import Foundation
     
     internal var imagePath: String { "TechSkills/\(self.id)" }
     
-    internal static var allItems: [AnimatableScroll] {
-        var items: [AnimatableScroll] = []
-
-        Self.allCases.forEach { items.append($0) }
-        
-        return items
-    }
+    internal static var iOSDevelopment: [AnimatableScroll] { [Self.appStore, Self.xcode, Self.testflight, Self.UIKit, Self.swiftUI, Self.coreData] }
+    
+    internal static var generalDevelopment: [AnimatableScroll] { [Self.linux, Self.git, Self.jenkins] }
+    
+    internal static var databases: [AnimatableScroll] { [Self.SQLite, Self.mySQL, Self.postgresql, Self.mongoDB] }
+    
+    internal static var design: [AnimatableScroll] { [Self.figma, Self.photoshop] }
+    
+    internal static var allItems: [AnimatableScroll] { Self.iOSDevelopment + Self.generalDevelopment + Self.databases + Self.design }
 
 }
