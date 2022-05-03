@@ -9,9 +9,7 @@ import Foundation
 
 @frozen internal enum TechSkills: String, Identifiable, CaseIterable, CustomStringConvertible, AnimatableScroll {
     case appStore, xcode, testflight, swiftUI, UIKit, coreData, git, jenkins, linux, SQLite, mySQL, postgresql, mongoDB, figma, photoshop
-    
-    // - MARK: TODO Categorize
-    
+        
     internal var id: String { self.description }
     
     internal var description: String {
