@@ -8,7 +8,7 @@
 import Foundation
 
 @frozen internal enum ProgrammingLanguages: String, Identifiable, CaseIterable, CustomStringConvertible, AnimatableScroll {
-    case swift, objectiveC, c, cpp, shellScript, java, python, haskell, rust, solidity
+    case swift, objectiveC, c, cpp, shellScript, java, python, haskell, rust, solidity, javascript
     
     internal var id: String { self.rawValue.withFirstLetterCapitalized }
     
