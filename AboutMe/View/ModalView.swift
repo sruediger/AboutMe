@@ -55,7 +55,7 @@ extension ModalView {
                             // - MARK: TODO Implementation
                             print("tapped \(ProgrammingLanguages.allCases[tappedLanguageIndex])")
                         }
-                        case .experience: self.experienceView().padding(.leading, 10)
+                    case .experience: self.experienceView().padding(.leading, 12.5)
                         case .apps: self.appView()
                         case .curiosities: self.createCuriositiesView()
                         case .contact: self.contactsView()
@@ -111,50 +111,59 @@ extension ModalView {
         }
     }
     
+    /// Time complexity: O(nˆ2)
     @ViewBuilder private func experienceView() -> some View {
-        Text("Education")
-            .font(.system(.title2, design: .rounded))
-            .fontWeight(.semibold)
-            .foregroundColor(.secondary)
-        
-        ForEach(ExperienceItem.getSergioExperiences()) { experience in
-            HStack(spacing: 8) {
-                Image(systemName: experience.imagePath)
-                    .resizable()
-                    .foregroundColor(.primary)
-                    .frame(width: 42, height: 46)
-                    .padding(2)
-                
-                let smallPhone = UIScreen.main.bounds.height <= 667
-                
-                VStack(alignment: .leading, spacing: smallPhone ? 2 : 1.25) {
-                    let titleFont: Font.TextStyle = smallPhone ? .subheadline : .title3
-                    let contentFont: Font = smallPhone ? .footnote : .subheadline
+        ForEach(0..<2, id: \.self) { section in
+            let sectionTitle: String = (section == 0 ? "Education" : "Professional")
+            
+            Text(sectionTitle)
+                .font(.system(.title2, design: .rounded))
+                .fontWeight(.semibold)
+                .foregroundColor(.secondary)
+            
+            let sectionItems: [ExperienceItem] = (section == 0 ? ExperienceItem.getSergioEducation() : ExperienceItem.getSergioExperiences())
+            
+            ForEach(sectionItems) { item in
+                HStack(spacing: 8) {
+                    let iconWidth: CGFloat = item.imagePath.contains("laptop") ? 56 : 42
+                    Image(systemName: item.imagePath)
+                        .resizable()
+                        .foregroundColor(.primary)
+                        .frame(width: iconWidth, height: 46)
+                        .padding(2)
                     
-                    Text(experience.name)
-                        .font(.system(titleFont, design: .rounded))
-                        .fontWeight(.semibold)
+                    let smallPhone = UIScreen.main.bounds.height <= 667
                     
-                    Text(experience.shortDescription)
-                        .font(contentFont)
-                        .fontWeight(.medium)
-                    
-                    HStack(spacing: 5) {
-                        Image(systemName: "graduationcap.fill")
-                            .resizable()
-                            .foregroundColor(.primary)
-                            .frame(width: 18, height: 18)
+                    VStack(alignment: .leading, spacing: smallPhone ? 2 : 1.25) {
+                        let titleFont: Font.TextStyle = smallPhone ? .subheadline : .title3
+                        let contentFont: Font = smallPhone ? .footnote : .subheadline
                         
-                        Text(experience.duration)
+                        Text(item.name)
+                            .font(.system(titleFont, design: .rounded))
+                            .fontWeight(.semibold)
+                        
+                        Text(item.shortDescription)
                             .font(contentFont)
                             .fontWeight(.medium)
+                        
+                        HStack(spacing: 5) {
+                            let timeImagePath: String = (section == 0 ? "graduationcap.fill" : "calendar.badge.clock")
+                            
+                            Image(systemName: timeImagePath)
+                                .resizable()
+                                .foregroundColor(.primary)
+                                .frame(width: 18, height: 18)
+                            
+                            Text(item.duration)
+                                .font(contentFont)
+                                .fontWeight(.medium)
+                        }
                     }
+                    Spacer()
                 }
-                Spacer()
             }
         }
     }
-    
 
     @ViewBuilder private func skillsView() -> some View {
         ForEach(0..<2) { row in
@@ -197,6 +206,6 @@ extension ModalView {
 
 struct ModalView_Previews: PreviewProvider {
     static var previews: some View {
-        ModalView(subview: .constant(.experience))
+        ModalView(subview: .constant(.skills))
     }
 }
