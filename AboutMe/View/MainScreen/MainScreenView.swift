@@ -61,7 +61,10 @@ extension MainScreenView {
     @ViewBuilder private func createBodyView(_ subviews: [MainScreenSubview]) -> some View {
         HStack(spacing: 10) {
             ForEach(subviews) { subview in
-                Button(action: {viewModel.set(subview: subview)}) {
+                Button(action: {
+                    HapticsManager.trigger(.heavy)
+                    viewModel.set(subview: subview)
+                }) {
                     VStack(spacing: 5) {
                         BlurredRectangleView(style: .systemChromeMaterial, foregroundColor: .secondary.opacity(0.15), cornerRadius: 20, shadowRadius: 6)
                             .opacity(0.45)

@@ -16,7 +16,10 @@ struct HorizontalCarouselView: View {
             LazyHStack(spacing: 10) {
                  ForEach(items.indices, id: \.self) { index in
                      GeometryReader { geometry in
-                         Button(action: {completionHandler(index)}) {
+                         Button(action: {
+                             HapticsManager.trigger(.medium)
+                             completionHandler(index)
+                         }) {
                              VStack(alignment: .center, spacing: 10) {
                                  self.createItem(at: index)
                                      .rotation3DEffect(Angle(degrees: Double((geometry.frame(in: .global).minX - 20) / -20)), axis: (x: 0, y: 1, z: 0), anchor: .center, anchorZ: 0.0, perspective: 1/*2.25*/)

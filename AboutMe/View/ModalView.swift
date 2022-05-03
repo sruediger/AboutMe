@@ -194,7 +194,10 @@ extension ModalView {
     }
     
     @ViewBuilder private func createButtonView() -> some View {
-        Button(action: { self.subview = nil }) {
+        Button(action: {
+            HapticsManager.trigger(.heavy)
+            self.subview = nil
+        }) {
             Image(systemName: "x.circle.fill")
                 .resizable()
                 .frame(width: 25, height: 25)
