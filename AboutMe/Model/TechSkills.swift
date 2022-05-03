@@ -8,7 +8,7 @@
 import Foundation
 
 @frozen internal enum TechSkills: String, Identifiable, CaseIterable, CustomStringConvertible, AnimatableScroll {
-    case appStore, xcode, testflight, /*git,*/ jenkins, figma, photoshop
+    case appStore, xcode, testflight, git, jenkins, figma, photoshop
     
     internal var id: String { self.description }
     
