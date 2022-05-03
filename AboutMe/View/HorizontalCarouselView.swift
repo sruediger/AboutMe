@@ -28,8 +28,7 @@ struct HorizontalCarouselView: View {
                          }
                      }.frame(width: 112, height: 112)
                  }
-             }.frame(height: 128)
-            .padding(.leading, 15).padding(.trailing, 15)
+             }.padding(.leading, 15).padding(.trailing, 15)
          }
     }
     
