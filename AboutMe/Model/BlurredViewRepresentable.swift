@@ -1,5 +1,5 @@
 //
-//  BlurredView.swift
+//  BlurredViewRepresentable.swift
 //  AboutMe
 //
 //  Created by Sérgio Ruediger on 29/04/22.

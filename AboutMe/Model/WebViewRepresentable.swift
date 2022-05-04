@@ -1,5 +1,5 @@
 //
-//  WebView.swift
+//  WebViewRepresentable.swift
 //  AboutMe
 //
 //  Created by Sérgio Ruediger on 28/04/22.
