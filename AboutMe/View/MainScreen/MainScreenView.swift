@@ -66,7 +66,7 @@ extension MainScreenView {
                     viewModel.set(subview: subview)
                 }) {
                     VStack(spacing: 5) {
-                        BlurredRectangleView(style: .systemChromeMaterial, foregroundColor: .secondary.opacity(0.15), cornerRadius: 20, shadowRadius: 6)
+                        BlurredRectangleView(style: .systemChromeMaterial, foregroundColor: .secondary.opacity(colorScheme == .dark ? 0.15 : 0.55), cornerRadius: 20, shadowRadius: 6)
                             .opacity(0.45)
                             .overlay(
                                 ZStack {
