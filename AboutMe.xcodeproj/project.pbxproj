@@ -30,6 +30,13 @@
 		F297A2DD28229834009D5AE5 /* MainScreenView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2DC28229834009D5AE5 /* MainScreenView+Builders.swift */; };
 		F297A2DF28229A36009D5AE5 /* ModalView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2DE28229A36009D5AE5 /* ModalView+Builders.swift */; };
 		F297A2E12822A833009D5AE5 /* ComponentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2E02822A833009D5AE5 /* ComponentCreator.swift */; };
+		F297A2E72822B820009D5AE5 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2E62822B820009D5AE5 /* ContactsView.swift */; };
+		F297A2E92822B8F8009D5AE5 /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2E82822B8F8009D5AE5 /* AppsView.swift */; };
+		F297A2EB2822B9F1009D5AE5 /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2EA2822B9F1009D5AE5 /* ExperiencesView.swift */; };
+		F297A2ED2822BA66009D5AE5 /* ProgrammingLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2EC2822BA66009D5AE5 /* ProgrammingLanguagesView.swift */; };
+		F297A2EF2822BAA4009D5AE5 /* CuriositiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2EE2822BAA4009D5AE5 /* CuriositiesView.swift */; };
+		F297A2F12822BAC0009D5AE5 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2F02822BAC0009D5AE5 /* SkillsView.swift */; };
+		F297A2F32822BB9F009D5AE5 /* SkillsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2F22822BB9F009D5AE5 /* SkillsViewModel.swift */; };
 		F2BD66FB2818B7A6009701ED /* AboutMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */; };
 		F2BD66FD2818B7A6009701ED /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66FC2818B7A6009701ED /* MainScreenView.swift */; };
 		F2BD66FF2818B7A7009701ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BD66FE2818B7A7009701ED /* Assets.xcassets */; };
@@ -81,6 +88,13 @@
 		F297A2DC28229834009D5AE5 /* MainScreenView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenView+Builders.swift"; sourceTree = "<group>"; };
 		F297A2DE28229A36009D5AE5 /* ModalView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalView+Builders.swift"; sourceTree = "<group>"; };
 		F297A2E02822A833009D5AE5 /* ComponentCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentCreator.swift; sourceTree = "<group>"; };
+		F297A2E62822B820009D5AE5 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		F297A2E82822B8F8009D5AE5 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
+		F297A2EA2822B9F1009D5AE5 /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
+		F297A2EC2822BA66009D5AE5 /* ProgrammingLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguagesView.swift; sourceTree = "<group>"; };
+		F297A2EE2822BAA4009D5AE5 /* CuriositiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriositiesView.swift; sourceTree = "<group>"; };
+		F297A2F02822BAC0009D5AE5 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+		F297A2F22822BB9F009D5AE5 /* SkillsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewModel.swift; sourceTree = "<group>"; };
 		F2BD66F72818B7A6009701ED /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeApp.swift; sourceTree = "<group>"; };
 		F2BD66FC2818B7A6009701ED /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
@@ -134,6 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				F2BD66FC2818B7A6009701ED /* MainScreenView.swift */,
+				F210EE45281C9AF20091951E /* ModalView.swift */,
+				F297A2E22822B7E9009D5AE5 /* Subviews */,
+				F297A2E32822B7F4009D5AE5 /* Components */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -155,6 +172,28 @@
 				F2BD67142818B7A7009701ED /* AboutMeUITests */,
 			);
 			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		F297A2E22822B7E9009D5AE5 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				F297A2E82822B8F8009D5AE5 /* AppsView.swift */,
+				F297A2E62822B820009D5AE5 /* ContactsView.swift */,
+				F297A2EA2822B9F1009D5AE5 /* ExperiencesView.swift */,
+				F297A2EC2822BA66009D5AE5 /* ProgrammingLanguagesView.swift */,
+				F297A2EE2822BAA4009D5AE5 /* CuriositiesView.swift */,
+				F297A2F02822BAC0009D5AE5 /* SkillsView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		F297A2E32822B7F4009D5AE5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F210EE4E281D62DC0091951E /* HorizontalCarouselView.swift */,
+				F210EE56281DF9B20091951E /* BlurredRectangleView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F2BD66EE2818B7A6009701ED = {
@@ -238,6 +277,7 @@
 			children = (
 				F210EE36281AC4C40091951E /* MainScreenViewModel.swift */,
 				F210EE47281CA9960091951E /* ModalViewModel.swift */,
+				F297A2F22822BB9F009D5AE5 /* SkillsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -246,9 +286,6 @@
 			isa = PBXGroup;
 			children = (
 				F210EE58281E0C950091951E /* MainScreen */,
-				F210EE45281C9AF20091951E /* ModalView.swift */,
-				F210EE4E281D62DC0091951E /* HorizontalCarouselView.swift */,
-				F210EE56281DF9B20091951E /* BlurredRectangleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -400,23 +437,30 @@
 				F297A2DD28229834009D5AE5 /* MainScreenView+Builders.swift in Sources */,
 				F2BD66FD2818B7A6009701ED /* MainScreenView.swift in Sources */,
 				F2BD66FB2818B7A6009701ED /* AboutMeApp.swift in Sources */,
+				F297A2EB2822B9F1009D5AE5 /* ExperiencesView.swift in Sources */,
 				F297A2E12822A833009D5AE5 /* ComponentCreator.swift in Sources */,
+				F297A2F12822BAC0009D5AE5 /* SkillsView.swift in Sources */,
 				F210EE3E281C37A70091951E /* ComponentFactory.swift in Sources */,
 				F295BECC2820D2B600B30346 /* HapticsManager.swift in Sources */,
 				F210EE39281ACA980091951E /* AvailableContacts.swift in Sources */,
 				F297A2DF28229A36009D5AE5 /* ModalView+Builders.swift in Sources */,
+				F297A2EF2822BAA4009D5AE5 /* CuriositiesView.swift in Sources */,
+				F297A2E92822B8F8009D5AE5 /* AppsView.swift in Sources */,
 				F210EE4B281CAFA20091951E /* WebViewRepresentable.swift in Sources */,
+				F297A2F32822BB9F009D5AE5 /* SkillsViewModel.swift in Sources */,
 				F210EE48281CA9960091951E /* ModalViewModel.swift in Sources */,
 				F210EE37281AC4C40091951E /* MainScreenViewModel.swift in Sources */,
 				F210EE55281D87680091951E /* TechSkills.swift in Sources */,
 				F210EE53281D875D0091951E /* Applications.swift in Sources */,
 				F210EE4F281D62DC0091951E /* HorizontalCarouselView.swift in Sources */,
 				F210EE60281EC4F40091951E /* ExperienceItem.swift in Sources */,
+				F297A2ED2822BA66009D5AE5 /* ProgrammingLanguagesView.swift in Sources */,
 				F210EE46281C9AF20091951E /* ModalView.swift in Sources */,
 				F22E08822818EA4900EB4768 /* String+Utils.swift in Sources */,
 				F210EE51281D83A60091951E /* AnimatableScroll.swift in Sources */,
 				F22E088E281A1E1000EB4768 /* NavigationConfigurator.swift in Sources */,
 				F22E08842818F2F300EB4768 /* ProgrammingLanguages.swift in Sources */,
+				F297A2E72822B820009D5AE5 /* ContactsView.swift in Sources */,
 				F210EE57281DF9B20091951E /* BlurredRectangleView.swift in Sources */,
 				F210EE3B281AE4630091951E /* UIWebViewRepresentable.swift in Sources */,
 				F210EE44281C99BE0091951E /* BlurredViewRepresentable.swift in Sources */,
