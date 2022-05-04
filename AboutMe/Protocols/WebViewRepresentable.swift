@@ -7,7 +7,8 @@
 
 import Foundation
 
-internal protocol WebViewRepresentable {    
+/// Protocol that identifies which types can be presented using WebKit's WKWebView
+internal protocol WebViewRepresentable {
+    /// URL of the content to be presented
     var url: URL { get }
-    
 }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Protocol used to create simple and reusable components
 internal protocol ComponentFactory {
     
     associatedtype ComponentView: View
