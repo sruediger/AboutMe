@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct ExperiencesView: View {
+    @State private var viewModel = ExperiencesViewModel()
     
     var body: some View { /// Time complexity: O(nˆ2)
-        ForEach(0..<2, id: \.self) { section in
-            let sectionTitle: String = (section == 0 ? "Education" : "Professional")
+        ForEach(0..<2, id: \.self) { row in
+            let sectionTitle: String = viewModel.getSection(titleAt: row)
             
             Text(sectionTitle)
                 .font(.system(.title2, design: .rounded))
                 .fontWeight(.semibold)
                 .foregroundColor(.secondary)
             
-            let sectionItems: [ExperienceItem] = (section == 0 ? ExperienceItem.getSergioEducation() : ExperienceItem.getSergioExperiences())
+            let sectionItems: [ExperienceItem] = viewModel.getSection(itemsAt: row)
             
             ForEach(sectionItems) { item in
                 HStack(spacing: 8) {
@@ -27,27 +28,22 @@ struct ExperiencesView: View {
                     ComponentCreator.create(imageFromPath: item.imagePath, dimensions: CGSize(width: iconWidth, height: 46), system: true, customColor: .primary)
                         .padding(2)
                     
-                    let smallPhone = UIScreen.main.bounds.height <= 667
-                    
-                    VStack(alignment: .leading, spacing: smallPhone ? 2 : 1.25) {
-                        let titleFont: Font.TextStyle = smallPhone ? .subheadline : .title3
-                        let contentFont: Font = smallPhone ? .footnote : .subheadline
-                        
+                    VStack(alignment: .leading, spacing: viewModel.smallPhone ? 2 : 1.25) {
                         Text(item.name)
-                            .font(.system(titleFont, design: .rounded))
+                            .font(.system(viewModel.titleFont, design: .rounded))
                             .fontWeight(.semibold)
                         
                         Text(item.shortDescription)
-                            .font(contentFont)
+                            .font(viewModel.contentFont)
                             .fontWeight(.medium)
                         
                         HStack(spacing: 5) {
-                            let timeImagePath: String = (section == 0 ? "graduationcap.fill" : "calendar.badge.clock")
+                            let timeImagePath: String = viewModel.getItem(imagePathAt: row)
                             
                             ComponentCreator.create(imageFromPath: timeImagePath, dimensions: CGSize(width: 18, height: 18), system: true, customColor: .primary)
                             
                             Text(item.duration)
-                                .font(contentFont)
+                                .font(viewModel.contentFont)
                                 .fontWeight(.medium)
                         }
                     }

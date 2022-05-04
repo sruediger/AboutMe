@@ -10,11 +10,12 @@ import SwiftUI
 struct AppsView: View {
     typealias Callback = (WebViewRepresentable) -> Void
     let completionHandler: Callback
+    @State private var viewModel = AppsViewModel()
     
     var body: some View {
         ForEach(0..<2) { row in
-            let items: [AnimatableScroll] = (row == 0 ? Applications.authorial : Applications.collabs)
-            let label: String = (row == 0 ? "Made by me" : "Collabs")
+            let items: [AnimatableScroll] = viewModel.getItems(of: row)
+            let label: String = viewModel.getLabel(of: row)
             
             Text(label)
                 .font(.system(.title3, design: .rounded))

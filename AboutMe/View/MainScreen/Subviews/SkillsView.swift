@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct SkillsView: View {
     @State internal var viewModel = SkillsViewModel()
     
@@ -30,9 +28,7 @@ struct SkillsView: View {
                     }
                 }
             }else {
-                let softSkills: [String] = ["Team work", "Communication", "Problem Solving", "Organization", "Curiosity", "Creativity", "Perseverance", "Resourcefulness"]
-                
-                ComponentCreator.create(plainListContent: softSkills, withBulletPoint: true)
+                ComponentCreator.create(plainListContent: viewModel.softSkills, withBulletPoint: true)
             }
         }
     }
