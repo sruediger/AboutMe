@@ -13,13 +13,22 @@ struct MainScreenViewModel {
     
     internal var horizontalCardViewPadding: CGFloat { UIDevice.current.userInterfaceIdiom == .pad ? 40 : 10 }
 
+    internal lazy var navigationBarAppearence: UINavigationBarAppearance = {
+        let appearence = UINavigationBarAppearance()
+        
+        appearence.configureWithTransparentBackground()
+        appearence.backgroundColor = (UIColor(named: "Colors/background") ?? .clear).withAlphaComponent(0.5)
+        appearence.backgroundEffect = UIBlurEffect(style: .systemThinMaterial)
+        
+        return appearence
+    }()
 
 }
 
+/// MainScreenViewModel+Methods
 extension MainScreenViewModel {
     
     internal func getSubviews(fromIndex index: Int) -> [MainScreenSubview] {
-        
         switch index {
             case 0: return [.languages, .skills]
             case 1: return [.apps, .experience]
