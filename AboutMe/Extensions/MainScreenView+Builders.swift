@@ -13,28 +13,36 @@ extension MainScreenView {
         let horizontalPadding = viewModel.horizontalCardViewPadding
         ScrollView(.vertical) {
             ZStack {
-                BlurredRectangleView(style: .systemChromeMaterial, foregroundColor: .accentColor.opacity(0.025), cornerRadius: 20, shadowRadius: 0)
-                    .overlay(
-                        LinearGradient(colors: [.accentColor, .purple], startPoint: .bottomTrailing, endPoint: .topLeading)
-                            .cornerRadius(20)
-                            .opacity(0.08)
-                    )
-                
-                VStack(alignment: .leading, spacing: 10) {
-                    self.createHeaderView()
-                                            
-                    Divider()
-                        .padding(.top)
-                        .padding(.bottom)
-                    
-                    ForEach(0..<3) { index in
-                        self.createBodyView(viewModel.getSubviews(fromIndex: index))
-                            .frame(height: 120)
-                    }
-                }.padding(10)
+                self.createCardBackgroundView()
+                self.createCardItemsView()
             }.padding(EdgeInsets(top: 10, leading: horizontalPadding, bottom: 20, trailing: horizontalPadding))
         }
     }
+    
+    @ViewBuilder private func createCardBackgroundView() -> some View {
+        BlurredRectangleView(style: .systemChromeMaterial, foregroundColor: .accentColor.opacity(0.025), cornerRadius: 20, shadowRadius: 0)
+            .overlay(
+                LinearGradient(colors: [.accentColor, .purple], startPoint: .bottomTrailing, endPoint: .topLeading)
+                    .cornerRadius(20)
+                    .opacity(0.08)
+            )
+    }
+    
+    @ViewBuilder private func createCardItemsView() -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            self.createHeaderView()
+                                    
+            Divider()
+                .padding(.top)
+                .padding(.bottom)
+            
+            ForEach(0..<3) { index in
+                self.createBodyView(viewModel.getSubviews(fromIndex: index))
+                    .frame(height: 120)
+            }
+        }.padding(10)
+    }
+    
     
     @ViewBuilder private func createHeaderView() -> some View {
         Group {
