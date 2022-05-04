@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		F210EE37281AC4C40091951E /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE36281AC4C40091951E /* MainScreenViewModel.swift */; };
 		F210EE39281ACA980091951E /* AvailableContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE38281ACA980091951E /* AvailableContacts.swift */; };
-		F210EE3B281AE4630091951E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE3A281AE4630091951E /* WebView.swift */; };
+		F210EE3B281AE4630091951E /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE3A281AE4630091951E /* WebViewRepresentable.swift */; };
 		F210EE3E281C37A70091951E /* ComponentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE3D281C37A60091951E /* ComponentFactory.swift */; };
-		F210EE44281C99BE0091951E /* BlurredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE43281C99BE0091951E /* BlurredView.swift */; };
+		F210EE44281C99BE0091951E /* BlurredViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE43281C99BE0091951E /* BlurredViewRepresentable.swift */; };
 		F210EE46281C9AF20091951E /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE45281C9AF20091951E /* ModalView.swift */; };
 		F210EE48281CA9960091951E /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE47281CA9960091951E /* ModalViewModel.swift */; };
 		F210EE4B281CAFA20091951E /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE4A281CAFA20091951E /* WebViewRepresentable.swift */; };
@@ -57,9 +57,9 @@
 /* Begin PBXFileReference section */
 		F210EE36281AC4C40091951E /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		F210EE38281ACA980091951E /* AvailableContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableContacts.swift; sourceTree = "<group>"; };
-		F210EE3A281AE4630091951E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		F210EE3A281AE4630091951E /* WebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRepresentable.swift; sourceTree = "<group>"; };
 		F210EE3D281C37A60091951E /* ComponentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentFactory.swift; sourceTree = "<group>"; };
-		F210EE43281C99BE0091951E /* BlurredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredView.swift; sourceTree = "<group>"; };
+		F210EE43281C99BE0091951E /* BlurredViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredViewRepresentable.swift; sourceTree = "<group>"; };
 		F210EE45281C9AF20091951E /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		F210EE47281CA9960091951E /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
 		F210EE4A281CAFA20091951E /* WebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRepresentable.swift; sourceTree = "<group>"; };
@@ -214,8 +214,8 @@
 				F22E08832818F2F300EB4768 /* ProgrammingLanguages.swift */,
 				F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */,
 				F22E088D281A1E1000EB4768 /* NavigationConfigurator.swift */,
-				F210EE3A281AE4630091951E /* WebView.swift */,
-				F210EE43281C99BE0091951E /* BlurredView.swift */,
+				F210EE3A281AE4630091951E /* WebViewRepresentable.swift */,
+				F210EE43281C99BE0091951E /* BlurredViewRepresentable.swift */,
 				F210EE52281D875D0091951E /* Applications.swift */,
 				F210EE54281D87680091951E /* TechSkills.swift */,
 				F210EE5F281EC4F40091951E /* ExperienceItem.swift */,
@@ -406,8 +406,8 @@
 				F22E088E281A1E1000EB4768 /* NavigationConfigurator.swift in Sources */,
 				F22E08842818F2F300EB4768 /* ProgrammingLanguages.swift in Sources */,
 				F210EE57281DF9B20091951E /* BlurredRectangleView.swift in Sources */,
-				F210EE3B281AE4630091951E /* WebView.swift in Sources */,
-				F210EE44281C99BE0091951E /* BlurredView.swift in Sources */,
+				F210EE3B281AE4630091951E /* WebViewRepresentable.swift in Sources */,
+				F210EE44281C99BE0091951E /* BlurredViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
