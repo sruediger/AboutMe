@@ -38,6 +38,7 @@ extension MainScreenViewModel {
     }
     
     internal mutating func set(subview: MainScreenSubview) {
+        guard self.presentedSubview == nil else { return }
         self.presentedSubview = subview
     }
     

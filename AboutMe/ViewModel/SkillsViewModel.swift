@@ -8,6 +8,8 @@
 import Foundation
 
 struct SkillsViewModel {
+    internal var softSkills: [String] { ["Team work", "Communication", "Problem Solving", "Organization", "Curiosity", "Creativity", "Perseverance", "Resourcefulness"] }
+    
     internal func getSkillsTitle(of index: Int) -> String {
         switch index {
             case 0: return "iOS Development"
