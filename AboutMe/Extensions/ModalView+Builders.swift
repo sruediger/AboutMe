@@ -21,6 +21,7 @@ extension ModalView {
                             .fontWeight(.bold)
                         Spacer()
                         
+                        /// Close Button
                         ComponentCreator.create(buttonWithDimensions: CGSize(width: 25, height: 25), imagePath: "x.circle.fill") {
                             HapticsManager.trigger(.heavy)
                             self.subview = nil
