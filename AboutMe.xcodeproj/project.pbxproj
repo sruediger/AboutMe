@@ -27,6 +27,9 @@
 		F22E088E281A1E1000EB4768 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E088D281A1E1000EB4768 /* NavigationConfigurator.swift */; };
 		F295BECC2820D2B600B30346 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295BECB2820D2B600B30346 /* HapticsManager.swift */; };
 		F295BECE2821942D00B30346 /* TestDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295BECD2821942D00B30346 /* TestDummy.swift */; };
+		F297A2DD28229834009D5AE5 /* MainScreenView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2DC28229834009D5AE5 /* MainScreenView+Builders.swift */; };
+		F297A2DF28229A36009D5AE5 /* ModalView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2DE28229A36009D5AE5 /* ModalView+Builders.swift */; };
+		F297A2E12822A833009D5AE5 /* ComponentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2E02822A833009D5AE5 /* ComponentCreator.swift */; };
 		F2BD66FB2818B7A6009701ED /* AboutMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */; };
 		F2BD66FD2818B7A6009701ED /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66FC2818B7A6009701ED /* MainScreenView.swift */; };
 		F2BD66FF2818B7A7009701ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BD66FE2818B7A7009701ED /* Assets.xcassets */; };
@@ -75,6 +78,9 @@
 		F22E088D281A1E1000EB4768 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
 		F295BECB2820D2B600B30346 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		F295BECD2821942D00B30346 /* TestDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDummy.swift; sourceTree = "<group>"; };
+		F297A2DC28229834009D5AE5 /* MainScreenView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenView+Builders.swift"; sourceTree = "<group>"; };
+		F297A2DE28229A36009D5AE5 /* ModalView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModalView+Builders.swift"; sourceTree = "<group>"; };
+		F297A2E02822A833009D5AE5 /* ComponentCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentCreator.swift; sourceTree = "<group>"; };
 		F2BD66F72818B7A6009701ED /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeApp.swift; sourceTree = "<group>"; };
 		F2BD66FC2818B7A6009701ED /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				F22E08812818EA4900EB4768 /* String+Utils.swift */,
+				F297A2DC28229834009D5AE5 /* MainScreenView+Builders.swift */,
+				F297A2DE28229A36009D5AE5 /* ModalView+Builders.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 				F210EE54281D87680091951E /* TechSkills.swift */,
 				F210EE5F281EC4F40091951E /* ExperienceItem.swift */,
 				F295BECB2820D2B600B30346 /* HapticsManager.swift */,
+				F297A2E02822A833009D5AE5 /* ComponentCreator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -388,11 +397,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F22E08862818F2FA00EB4768 /* MainScreenSubview.swift in Sources */,
+				F297A2DD28229834009D5AE5 /* MainScreenView+Builders.swift in Sources */,
 				F2BD66FD2818B7A6009701ED /* MainScreenView.swift in Sources */,
 				F2BD66FB2818B7A6009701ED /* AboutMeApp.swift in Sources */,
+				F297A2E12822A833009D5AE5 /* ComponentCreator.swift in Sources */,
 				F210EE3E281C37A70091951E /* ComponentFactory.swift in Sources */,
 				F295BECC2820D2B600B30346 /* HapticsManager.swift in Sources */,
 				F210EE39281ACA980091951E /* AvailableContacts.swift in Sources */,
+				F297A2DF28229A36009D5AE5 /* ModalView+Builders.swift in Sources */,
 				F210EE4B281CAFA20091951E /* WebViewRepresentable.swift in Sources */,
 				F210EE48281CA9960091951E /* ModalViewModel.swift in Sources */,
 				F210EE37281AC4C40091951E /* MainScreenViewModel.swift in Sources */,
