@@ -24,7 +24,6 @@
 		F22E08822818EA4900EB4768 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08812818EA4900EB4768 /* String+Utils.swift */; };
 		F22E08842818F2F300EB4768 /* ProgrammingLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08832818F2F300EB4768 /* ProgrammingLanguages.swift */; };
 		F22E08862818F2FA00EB4768 /* MainScreenSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */; };
-		F22E088E281A1E1000EB4768 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E088D281A1E1000EB4768 /* NavigationConfigurator.swift */; };
 		F295BECC2820D2B600B30346 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295BECB2820D2B600B30346 /* HapticsManager.swift */; };
 		F295BECE2821942D00B30346 /* TestDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295BECD2821942D00B30346 /* TestDummy.swift */; };
 		F297A2DD28229834009D5AE5 /* MainScreenView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2DC28229834009D5AE5 /* MainScreenView+Builders.swift */; };
@@ -40,6 +39,13 @@
 		F297A2F52822C181009D5AE5 /* ComponentFactory+CreationalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2F42822C181009D5AE5 /* ComponentFactory+CreationalMethods.swift */; };
 		F297A2F72822C287009D5AE5 /* AppsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2F62822C287009D5AE5 /* AppsViewModel.swift */; };
 		F297A2F92822C3FE009D5AE5 /* ExperiencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2F82822C3FE009D5AE5 /* ExperiencesViewModel.swift */; };
+		F297A2FE28234CC4009D5AE5 /* MockedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2FC28234C2B009D5AE5 /* MockedApp.swift */; };
+		F297A2FF28234CEA009D5AE5 /* MainScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2FA28234AF6009D5AE5 /* MainScreenUITests.swift */; };
+		F297A300282350F9009D5AE5 /* MainScreenSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */; };
+		F297A301282350FA009D5AE5 /* MainScreenSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */; };
+		F297A30228235169009D5AE5 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08812818EA4900EB4768 /* String+Utils.swift */; };
+		F297A3032823516A009D5AE5 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08812818EA4900EB4768 /* String+Utils.swift */; };
+		F297A30728235A2D009D5AE5 /* ModalViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A30628235A2D009D5AE5 /* ModalViewUITests.swift */; };
 		F2BD66FB2818B7A6009701ED /* AboutMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */; };
 		F2BD66FD2818B7A6009701ED /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66FC2818B7A6009701ED /* MainScreenView.swift */; };
 		F2BD66FF2818B7A7009701ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BD66FE2818B7A7009701ED /* Assets.xcassets */; };
@@ -85,7 +91,6 @@
 		F22E08812818EA4900EB4768 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 		F22E08832818F2F300EB4768 /* ProgrammingLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguages.swift; sourceTree = "<group>"; };
 		F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenSubview.swift; sourceTree = "<group>"; };
-		F22E088D281A1E1000EB4768 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
 		F295BECB2820D2B600B30346 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		F295BECD2821942D00B30346 /* TestDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDummy.swift; sourceTree = "<group>"; };
 		F297A2DC28229834009D5AE5 /* MainScreenView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenView+Builders.swift"; sourceTree = "<group>"; };
@@ -101,6 +106,9 @@
 		F297A2F42822C181009D5AE5 /* ComponentFactory+CreationalMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComponentFactory+CreationalMethods.swift"; sourceTree = "<group>"; };
 		F297A2F62822C287009D5AE5 /* AppsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewModel.swift; sourceTree = "<group>"; };
 		F297A2F82822C3FE009D5AE5 /* ExperiencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesViewModel.swift; sourceTree = "<group>"; };
+		F297A2FA28234AF6009D5AE5 /* MainScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenUITests.swift; sourceTree = "<group>"; };
+		F297A2FC28234C2B009D5AE5 /* MockedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedApp.swift; sourceTree = "<group>"; };
+		F297A30628235A2D009D5AE5 /* ModalViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewUITests.swift; sourceTree = "<group>"; };
 		F2BD66F72818B7A6009701ED /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeApp.swift; sourceTree = "<group>"; };
 		F2BD66FC2818B7A6009701ED /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
@@ -255,8 +263,11 @@
 		F2BD67142818B7A7009701ED /* AboutMeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				F297A2FC28234C2B009D5AE5 /* MockedApp.swift */,
 				F2BD67152818B7A7009701ED /* AboutMeUITests.swift */,
 				F2BD67172818B7A7009701ED /* AboutMeUITestsLaunchTests.swift */,
+				F297A2FA28234AF6009D5AE5 /* MainScreenUITests.swift */,
+				F297A30628235A2D009D5AE5 /* ModalViewUITests.swift */,
 			);
 			path = AboutMeUITests;
 			sourceTree = "<group>";
@@ -271,7 +282,6 @@
 				F210EE5F281EC4F40091951E /* ExperienceItem.swift */,
 				F295BECB2820D2B600B30346 /* HapticsManager.swift */,
 				F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */,
-				F22E088D281A1E1000EB4768 /* NavigationConfigurator.swift */,
 				F22E08832818F2F300EB4768 /* ProgrammingLanguages.swift */,
 				F210EE54281D87680091951E /* TechSkills.swift */,
 				F210EE3A281AE4630091951E /* UIWebViewRepresentable.swift */,
@@ -470,7 +480,6 @@
 				F210EE46281C9AF20091951E /* ModalView.swift in Sources */,
 				F22E08822818EA4900EB4768 /* String+Utils.swift in Sources */,
 				F210EE51281D83A60091951E /* AnimatableScroll.swift in Sources */,
-				F22E088E281A1E1000EB4768 /* NavigationConfigurator.swift in Sources */,
 				F22E08842818F2F300EB4768 /* ProgrammingLanguages.swift in Sources */,
 				F297A2E72822B820009D5AE5 /* ContactsView.swift in Sources */,
 				F210EE57281DF9B20091951E /* BlurredRectangleView.swift in Sources */,
@@ -483,8 +492,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F297A30228235169009D5AE5 /* String+Utils.swift in Sources */,
 				F295BECE2821942D00B30346 /* TestDummy.swift in Sources */,
 				F2BD670C2818B7A7009701ED /* AboutMeTests.swift in Sources */,
+				F297A301282350FA009D5AE5 /* MainScreenSubview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,8 +503,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F297A300282350F9009D5AE5 /* MainScreenSubview.swift in Sources */,
+				F297A2FF28234CEA009D5AE5 /* MainScreenUITests.swift in Sources */,
+				F297A3032823516A009D5AE5 /* String+Utils.swift in Sources */,
 				F2BD67182818B7A7009701ED /* AboutMeUITestsLaunchTests.swift in Sources */,
 				F2BD67162818B7A7009701ED /* AboutMeUITests.swift in Sources */,
+				F297A2FE28234CC4009D5AE5 /* MockedApp.swift in Sources */,
+				F297A30728235A2D009D5AE5 /* ModalViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
