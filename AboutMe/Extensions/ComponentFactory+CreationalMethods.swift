@@ -30,7 +30,7 @@ extension ComponentFactory {
                 .frame(width: dimensions.width, height: dimensions.height)
                 .foregroundColor(customColor)
                 .padding(customPadding)
-        }
+        }.accessibilityIdentifier("closeButton")
     }
     
     // Warning: Must be embed in a VStack
