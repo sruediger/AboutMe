@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Experience Item presented by the ExperiencesView that represents educational or professional experiences
 struct ExperienceItem: Identifiable {
     /// Name of the experience
     internal let name: String

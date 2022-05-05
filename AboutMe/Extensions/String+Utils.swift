@@ -9,10 +9,13 @@ import Foundation
 
 extension String {
     
+    /// Capitalizes the first character of a string
+    /// - Returns String containing self with the first char uppercased
     private func capitalizingFirstLetter() -> String {
         return prefix(1).capitalized + dropFirst()
     }
     
+    /// Computed property that capitalizes the first character of this string
     internal var withFirstLetterCapitalized: String {
         let newString = self.capitalizingFirstLetter()
         return newString

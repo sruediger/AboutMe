@@ -8,9 +8,12 @@
 import CoreGraphics
 import UIKit
 
+/// Structure used to control the ModalView
 struct ModalViewModel {
+    /// Tuple used to instantiate an WKWebView
     internal var webView: (show: Bool, contentURL: URL) = (false, .init(string: "https://developer.apple.com")!)
     
+    /// Computed property that checks if the device is in portrait mode
     internal var deviceInPortraitMode: Bool {
         UIScreen.main.bounds.width > UIScreen.main.bounds.height
     }
@@ -19,6 +22,9 @@ struct ModalViewModel {
 /// ModalViewModel+Methods
 extension ModalViewModel {
     
+    /// Fetch a specific subview's vertical scroll indicator visibility
+    /// - Parameter subview: Subview that contains the VScroll
+    /// - Returns Bool indicating if the indicator is visible
     internal func getVScrollIndicator(from subview: MainScreenSubview?) -> Bool {
         switch subview {
             case .languages, .contact: return false
@@ -27,6 +33,8 @@ extension ModalViewModel {
         }
     }
     
+    /// Perform the action of an WebViewRepresentable item when it's tapped
+    /// - Parameter webItem: The WebViewRepresentable tapped item
     internal mutating func tapped(webItem: WebViewRepresentable) {
         self.webView.contentURL = webItem.url
         if webItem.url.absoluteString.contains("itms-apps") { // Open app Store (unavailable on simulator)
@@ -36,6 +44,9 @@ extension ModalViewModel {
         }
     }
 
+    /// Fetch a specific subview content size
+    /// - Parameter content: Optional<MainScreenSubview> instance
+    /// - Returns CGSize containing the content size width and height
     internal func getSizeOf(content: MainScreenSubview?) -> CGSize {
         guard let subview = content else { return .zero }
         let deviceWidth = UIScreen.main.bounds.width
