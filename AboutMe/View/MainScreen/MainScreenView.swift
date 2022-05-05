@@ -7,10 +7,14 @@
 
 import SwiftUI
 
+/// Main view that shows the app's main interface
 struct MainScreenView: View {
+    /// Object used to control the View
     @State internal var viewModel = MainScreenViewModel()
+    /// Device current color scheme
     @Environment(\.colorScheme) internal var colorScheme
     
+    /// Default initializer
     public init() {
         UINavigationBar.appearance().standardAppearance = viewModel.navigationBarAppearence
     }

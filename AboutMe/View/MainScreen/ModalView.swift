@@ -7,8 +7,11 @@
 
 import SwiftUI
 
+/// Modal view that overlays the MainScreenView
 struct ModalView: View {
+    /// Subview that will be presented
     @Binding var subview: MainScreenSubview?
+    /// Object used to control the View
     @State internal var viewModel = ModalViewModel()
         
     var body: some View {

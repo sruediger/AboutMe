@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Structure used to create UIVisualEffectView instances
 struct BlurredView: UIViewRepresentable {
     var style: UIBlurEffect.Style
     

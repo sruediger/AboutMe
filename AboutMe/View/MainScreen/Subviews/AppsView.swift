@@ -7,9 +7,13 @@
 
 import SwiftUI
 
+/// Apps subview presented by the ModalView
 struct AppsView: View {
+    /// CompletionHandler alias
     typealias Callback = (WebViewRepresentable) -> Void
+    /// Action that happens when an item (app) is tapped
     let completionHandler: Callback
+    /// Object used to control the View
     @State private var viewModel = AppsViewModel()
     
     var body: some View {

@@ -7,8 +7,11 @@
 
 import SwiftUI
 
+/// SwiftUI's custom HScrollView wrapper that creates an animated horizontal carousel view
 struct HorizontalCarouselView: View {
+    /// Collection of the items that will be presented
     internal var items: [AnimatableScroll]
+    /// Action that happens when an item is tapped
     internal var completionHandler: (Int) -> Void
     
     var body: some View {
@@ -28,8 +31,8 @@ struct HorizontalCarouselView: View {
                          }
                      }.frame(width: 112, height: 112)
                  }
-             }.padding(.leading, 15).padding(.trailing, 15)
-         }
+            }.padding(.leading, 15).padding(.trailing, 15)
+        }
     }
     
     @ViewBuilder private func createItem(at index: Int) -> some View {

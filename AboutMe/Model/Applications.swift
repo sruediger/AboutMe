@@ -7,10 +7,11 @@
 
 import Foundation
 
+/// Enumaration that contains all apps developed by Sérgio
 @frozen internal enum Applications: String, Identifiable, CaseIterable, CustomStringConvertible, AnimatableScroll, WebViewRepresentable {
-    
     case faunaVsBunny, catchNap, fonospace, iHasher, secretly
     
+    /// App identifier
     internal var id: String {
         switch self {
             case .iHasher: return self.rawValue
@@ -18,6 +19,7 @@ import Foundation
         }
     }
     
+    /// App description (title)
     internal var description: String {
         switch self {
             case .faunaVsBunny: return "Fauna Vs Bunny"
@@ -28,8 +30,10 @@ import Foundation
         }
     }
     
+    /// Path of the image
     internal var imagePath: String { "Apps/\(self.id)" }
     
+    /// App Store URL
     internal var url: URL {
         let appStoreURL: String = "itms-apps://itunes.apple.com/us/app/apple-store"
         let appURL: URL
@@ -45,6 +49,7 @@ import Foundation
         return appURL
     }
     
+    /// All cases of of this enum represented as an Array<AnimatableScroll>
     internal static var allItems: [AnimatableScroll] {
         var items: [AnimatableScroll] = []
 
@@ -57,7 +62,7 @@ import Foundation
 
 extension Applications {
     
-    
+    /// All apps made entirely by Sérgio
     internal static var authorial: [AnimatableScroll] {
         var items: [AnimatableScroll] = []
 
@@ -67,6 +72,7 @@ extension Applications {
         return items
     }
     
+    /// All apps that Sérgio collaborated with
     internal static var collabs: [AnimatableScroll] {
         var items: [AnimatableScroll] = []
         
@@ -75,7 +81,6 @@ extension Applications {
                 items.append($0)
             }
         }
-        
         return items
     }
 }

@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+/// Experiences subview presented by the ModalView
 struct ExperiencesView: View {
+    /// Object used to control the View
     @State private var viewModel = ExperiencesViewModel()
     
     var body: some View { /// Time complexity: O(nˆ2)

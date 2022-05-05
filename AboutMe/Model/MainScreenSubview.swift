@@ -7,13 +7,17 @@
 
 import Foundation
 
+/// Enumeration that contains all Main Screen Subviews
 @frozen internal enum MainScreenSubview: String, Identifiable, CaseIterable, CustomStringConvertible {
-    case skills, languages, experience, apps, curiosities, contact
+    case languages, skills, apps, experience, curiosities, contact
     
+    /// Subview identifier
     internal var id: String { self.rawValue.withFirstLetterCapitalized }
     
+    /// Subview description (title)
     internal var description: String { self.id }
     
+    /// Path of the image
     internal var imagePath: String {
         switch self {
             case .experience: return "books.vertical"

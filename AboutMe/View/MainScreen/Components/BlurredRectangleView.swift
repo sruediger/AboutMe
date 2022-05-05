@@ -7,11 +7,15 @@
 
 import SwiftUI
 
-
+/// A blurred rectangle view
 struct BlurredRectangleView: View {
+    /// Blur effect style
     internal let style: UIBlurEffect.Style
+    /// Rectangle's foreground color
     internal let foregroundColor: Color
+    /// Rectangle's corner radius
     internal let cornerRadius: CGFloat
+    /// Rectangle's shadow radius
     internal let shadowRadius: CGFloat
     
     var body: some View {

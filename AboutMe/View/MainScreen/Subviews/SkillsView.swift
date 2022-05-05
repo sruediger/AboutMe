@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+/// Skills subview presented by the ModalView
 struct SkillsView: View {
+    /// Object used to control the View
     @State internal var viewModel = SkillsViewModel()
     
     var body: some View {

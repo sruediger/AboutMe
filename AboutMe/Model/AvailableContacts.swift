@@ -7,12 +7,14 @@
 
 import Foundation
 
+/// Enumaration that contains all Sérgio's contacts
 @frozen internal enum AvailableContacts: Int, WebViewRepresentable, Identifiable, CaseIterable, CustomStringConvertible {
-    
     case linkedIn, github, telegram
     
+    /// Contact identifier
     internal var id: Int { self.rawValue }
     
+    /// Contact asset name
     private var name: String {
         switch self {
             case .linkedIn: return "linkedIn"
@@ -21,10 +23,13 @@ import Foundation
         }
     }
     
+    /// Contact description (title)
     internal var description: String { self.name.withFirstLetterCapitalized }
     
+    /// Path of the image
     internal var imagePath: String { "Contacts/\(name)" }
     
+    /// Contact page URL
     internal var url: URL {
         switch self {
             case .linkedIn: return URL(string: "https://linkedin.com/in/sergiogruediger")!

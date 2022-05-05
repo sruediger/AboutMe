@@ -7,9 +7,13 @@
 
 import SwiftUI
 
+/// Contacts subview presented by the ModalView
 struct ContactsView: View {
+    /// AvailableContacts alias
     typealias Contact = AvailableContacts
+    /// CompletionHandler alias
     typealias Callback = (Contact) -> Void
+    /// Action that happens when an item (app) is tapped
     let completionHandler: Callback
     
     var body: some View {
