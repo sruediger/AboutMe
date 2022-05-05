@@ -16,7 +16,12 @@ public final class MockedApp {
     // - MARK: TODO move all app strings to Localizable file and create models to turn them and other components accessible to the main and both tests targets
     
     internal lazy var mainScreenTexts: [String] = ["About Me", "Sérgio Gomes Ruediger", "iOS developer & software engineer", "Brasília, Brazil", "Languages", "Skills", "Apps", "Experience", "Curiosities", "Contact"]
-
     
+    /// Assert that a button exists and tap it
+    /// - Parameter button: XCUIElement object that represent this app's buttons
+    internal func assertButtonExistsAndTap(button: XCUIElement) {
+        XCTAssert(button.exists)
+        button.tap()
+    }
     
 }
