@@ -9,14 +9,78 @@ import XCTest
 
 extension ModalViewUITests {
     
+    func testScrollLanguages() throws {
+        guard let app = self.mockedApp else { return }
+        
+        app.instance.launch()
+        
+        let languagesSubviewButton = app.instance.buttons["Languages"]
+        
+        app.assertButtonExistsAndTap(button: languagesSubviewButton)
+        
+        for index in 0..<3 {
+            let scrollVelocity: XCUIGestureVelocity = index >= 2 ? .slow : .fast
+            app.instance.swipeLeft(velocity: scrollVelocity)
+            app.instance.swipeRight(velocity: scrollVelocity)
+        }
+        
+        XCTAssertNotNil(self.mockedApp)
+    }
+    
+    func testScrollSkills() throws {
+        guard let app = self.mockedApp else { return }
+        
+        app.instance.launch()
+        
+        let skillsSubviewButton = app.instance.buttons["Skills"]
+        
+        app.assertButtonExistsAndTap(button: skillsSubviewButton)
+        
+        for index in 0..<3 {
+            let horizontalVelocity: XCUIGestureVelocity = index > 0 ? .fast : .slow
+            app.instance.swipeLeft(velocity: horizontalVelocity)
+            app.instance.swipeRight(velocity: horizontalVelocity)
+            app.instance.swipeUp(velocity: .fast)
+            app.instance.swipeDown(velocity: .slow)
+        }
+
+        let closeButton = app.instance.buttons["closeButton"]
+        app.assertButtonExistsAndTap(button: closeButton)
+        
+        XCTAssertNotNil(self.mockedApp)
+    }
+    
+    
+    func testOpenContactsWebView() throws {
+        guard let app = self.mockedApp else { return }
+        
+        app.instance.launch()
+        
+        let contactsSubviewButton = app.instance.buttons["Contact"]
+        
+        app.assertButtonExistsAndTap(button: contactsSubviewButton)
+        
+        AvailableContacts.allCases.forEach {
+            let contactButton = app.instance.buttons[$0.description]
+            
+            app.assertButtonExistsAndTap(button: contactButton)
+
+            XCTAssert(contactButton.waitForExistence(timeout: 1))
+
+            // Dismiss the modal
+            app.instance.swipeDown(velocity: .fast)
+        }
+        XCTAssertNotNil(self.mockedApp)
+    }
+    
     func testOpenAndCloseAllModals() throws {
         guard let app = self.mockedApp else { return }
         
         app.instance.launch()
         MainScreenSubview.allCases.forEach {
             let button = app.instance.buttons[$0.description]
-            button.tap()
             
+            app.assertButtonExistsAndTap(button: button)
             app.instance.swipeUp()
             app.instance.swipeDown()
             
@@ -27,7 +91,7 @@ extension ModalViewUITests {
             
             let closeButton = app.instance.buttons["closeButton"]
             
-            closeButton.tap()
+            app.assertButtonExistsAndTap(button: closeButton)
             
             // Last item
             if $0 == .contact {
@@ -68,14 +132,5 @@ final class ModalViewUITests: XCTestCase {
     override func tearDownWithError() throws {
         NSLog("%@", "tearDownWithError")
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-    
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
     }
 }
