@@ -24,4 +24,22 @@ public final class MockedApp {
         button.tap()
     }
     
+    /// Set the device orientation to portrait if not set
+    internal func restartOrientation() {
+        if XCUIDevice.shared.orientation != .portrait {
+            XCUIDevice.shared.orientation = .portrait
+        }
+    }
+    
+    internal func toggleOrientation(of device: XCUIDevice) {
+        switch device.orientation {
+            case .portrait: device.orientation = .landscapeLeft
+            case .portraitUpsideDown: device.orientation = .landscapeRight
+            case .landscapeLeft: device.orientation = .portraitUpsideDown
+            case .landscapeRight: device.orientation = .portrait
+            default: device.orientation = .portrait
+        }
+        
+    }
+    
 }

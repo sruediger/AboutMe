@@ -9,10 +9,8 @@ import XCTest
 
 class AboutMeUITestsLaunchTests: XCTestCase {
 
-    override class var runsForEachTargetApplicationUIConfiguration: Bool {
-        true
-    }
-
+    override class var runsForEachTargetApplicationUIConfiguration: Bool { false }
+    
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
@@ -26,14 +24,16 @@ class AboutMeUITestsLaunchTests: XCTestCase {
 
         let attachment = XCTAttachment(screenshot: app.screenshot())
         attachment.name = "Launch Screen"
-        attachment.lifetime = .keepAlways
+        attachment.lifetime = .deleteOnSuccess
         add(attachment)
     }
     
     func testLaunchPerformance() throws {
+        // This measures how long it takes to launch the application.
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
+            let options: XCTMeasureOptions = .init()
+            options.iterationCount = 1
+            measure(metrics: [XCTApplicationLaunchMetric()], options: options) {
                 XCUIApplication().launch()
             }
         }

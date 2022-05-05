@@ -9,11 +9,18 @@ import XCTest
 
 extension MainScreenUITests {
     
-    func testButtons() throws {
+    func testAutolayout() throws {
         guard let app = self.mockedApp else { return }
-
-        app.instance.launch()
+        for _ in 0..<12 {
+            app.toggleOrientation(of: XCUIDevice.shared)
+        }
+        XCTAssertNotNil(self.mockedApp)
+    }
+    
+    func testButtons() throws {
         MainScreenSubview.allCases.forEach {
+            guard let app = self.mockedApp else { return }
+
             let button = app.instance.buttons[$0.description]
             XCTAssert(button.exists)
             XCTAssert(button.waitForExistence(timeout: 0.5))
@@ -22,8 +29,6 @@ extension MainScreenUITests {
     
     func testStaticTexts() throws {
         guard let app = self.mockedApp else { return }
-        
-        app.instance.launch()
         app.mainScreenTexts.forEach {
             let text = app.instance.staticTexts[$0]
             XCTAssert(text.exists)
@@ -40,10 +45,12 @@ final class MainScreenUITests: XCTestCase {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
         self.mockedApp = MockedApp()
+        self.mockedApp?.instance.launch()
+        self.mockedApp?.restartOrientation()
     }
     
     override func tearDown()  {
-        NSLog("%@", "tearDown§")
+        NSLog("%@", "tearDown")
         super.tearDown()
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         self.mockedApp = nil
