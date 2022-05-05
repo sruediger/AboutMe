@@ -46,6 +46,10 @@
 		F297A30228235169009D5AE5 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08812818EA4900EB4768 /* String+Utils.swift */; };
 		F297A3032823516A009D5AE5 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E08812818EA4900EB4768 /* String+Utils.swift */; };
 		F297A30728235A2D009D5AE5 /* ModalViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A30628235A2D009D5AE5 /* ModalViewUITests.swift */; };
+		F297A3082823760A009D5AE5 /* AvailableContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE38281ACA980091951E /* AvailableContacts.swift */; };
+		F297A3092823760A009D5AE5 /* AvailableContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE38281ACA980091951E /* AvailableContacts.swift */; };
+		F297A30A282376DF009D5AE5 /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE4A281CAFA20091951E /* WebViewRepresentable.swift */; };
+		F297A30B282376E0009D5AE5 /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F210EE4A281CAFA20091951E /* WebViewRepresentable.swift */; };
 		F2BD66FB2818B7A6009701ED /* AboutMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66FA2818B7A6009701ED /* AboutMeApp.swift */; };
 		F2BD66FD2818B7A6009701ED /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD66FC2818B7A6009701ED /* MainScreenView.swift */; };
 		F2BD66FF2818B7A7009701ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BD66FE2818B7A7009701ED /* Assets.xcassets */; };
@@ -492,10 +496,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F297A30B282376E0009D5AE5 /* WebViewRepresentable.swift in Sources */,
 				F297A30228235169009D5AE5 /* String+Utils.swift in Sources */,
 				F295BECE2821942D00B30346 /* TestDummy.swift in Sources */,
 				F2BD670C2818B7A7009701ED /* AboutMeTests.swift in Sources */,
 				F297A301282350FA009D5AE5 /* MainScreenSubview.swift in Sources */,
+				F297A3082823760A009D5AE5 /* AvailableContacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,8 +509,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F297A30A282376DF009D5AE5 /* WebViewRepresentable.swift in Sources */,
 				F297A300282350F9009D5AE5 /* MainScreenSubview.swift in Sources */,
 				F297A2FF28234CEA009D5AE5 /* MainScreenUITests.swift in Sources */,
+				F297A3092823760A009D5AE5 /* AvailableContacts.swift in Sources */,
 				F297A3032823516A009D5AE5 /* String+Utils.swift in Sources */,
 				F2BD67182818B7A7009701ED /* AboutMeUITestsLaunchTests.swift in Sources */,
 				F2BD67162818B7A7009701ED /* AboutMeUITests.swift in Sources */,
