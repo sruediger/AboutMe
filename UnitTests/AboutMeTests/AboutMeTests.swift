@@ -10,6 +10,24 @@ import XCTest
 
 extension AboutMeTests {
     
+    func testAllLocalizations() {
+        let locales = ["en", "pt-BR"]
+        for locale in locales { verify(localeIdentifier: locale) }
+    }
+    
+    func verify(localeIdentifier: String) {
+        guard let path = Bundle.main.path(forResource: localeIdentifier, ofType: "lproj"),
+        let bundle = Bundle(path: path) else {
+            XCTFail("Missing localization for \(localeIdentifier)"); return
+        }
+
+        // Pick any string from the Localizable.strings file; ideally one that's unlikely to be removed ;)
+        let string = bundle.localizedString(forKey: "STXMainTitle", value: nil, table: nil)
+
+        XCTAssertFalse(string.isEmpty)
+        XCTAssertNotEqual(string, "STXMainTitle")
+    }
+    
     /// Test if the assets used by the app are in it
     internal func testLoadAssets() {
         print("Trying to load all AboutMeApp assets...")
