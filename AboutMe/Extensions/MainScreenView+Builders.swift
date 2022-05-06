@@ -55,7 +55,7 @@ extension MainScreenView {
                         .font(.system(.title2, design: .rounded))
                         .fontWeight(.bold)
                     
-                    Text("iOS developer & software engineer")
+                    Text(String.localized("STXOccupation"))
                         .italic()
                         .font(.subheadline)
                    //     .fontWeight(.regular)
@@ -63,7 +63,7 @@ extension MainScreenView {
                     HStack(spacing: 10) {
                         ComponentCreator.create(imageFromPath: "location.fill", dimensions: CGSize(width: 20, height: 20), system: true, customColor: .accentColor)
                         
-                        Text("Brasília, Brazil")
+                        Text(String.localized("STXLocation"))
                             .font(.system(.subheadline, design: .rounded))
                             .fontWeight(.bold)
                     }
@@ -71,10 +71,11 @@ extension MainScreenView {
             }
           //  Divider()
             
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan laoreet pellentesque. Suspendisse vestibulum urna ex, tempor condimentum lorem consequat id interdum pharetra neque, ut auctor metus tincidunt at. Curabitur elementum quam risus, eu convallis tortor luctus tempus, blandit laoreet nunc sit amet consequat.")
-                .font(.footnote)
+            Text(String.localized("STXDescription"))
+                .font(.subheadline)
+                .fontWeight(.medium)
                 .multilineTextAlignment(.leading)
-                .padding(EdgeInsets(top: 0, leading: 4, bottom: 0, trailing: 4))
+            //    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
         }.foregroundColor(.primary)
     }
         

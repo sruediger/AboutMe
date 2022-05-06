@@ -21,6 +21,6 @@ struct AppsViewModel {
     /// - Parameter row: Section row
     /// - Returns String containing the section title label
     internal func getLabel(of row: Int) -> String {
-        return row == 0 ? "Made by me" : "Collabs"
+        return row == 0 ? String.localized("APSMadeByMe") : String.localized("APSCollabs")
     }
 }

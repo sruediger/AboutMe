@@ -12,7 +12,16 @@ import Foundation
     case languages, skills, apps, experience, curiosities, contact
     
     /// Subview identifier
-    internal var id: String { self.rawValue.withFirstLetterCapitalized }
+    internal var id: String {
+        switch self {
+            case .languages: return String.localized("BTNLanguages")
+            case .skills: return String.localized("BTNSkills")
+            case .apps: return String.localized("BTNApps")
+            case .experience: return String.localized("BTNExperiences")
+            case .curiosities: return String.localized("BTNCuriosities")
+            case .contact: return String.localized("BTNContact")
+        }
+    }
     
     /// Subview description (title)
     internal var description: String { self.id }

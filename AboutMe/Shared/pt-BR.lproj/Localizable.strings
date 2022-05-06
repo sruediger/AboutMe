@@ -5,3 +5,55 @@
   Created by Sérgio Ruediger on 03/05/22.
   
 */
+
+// Static Texts (STX)
+"STXMainTitle" = "Sobre mim";
+"STXOccupation" = "Desenvolvedor iOS & engenheiro de software";
+"STXLocation" = "Brasília, Brasil";
+"STXDescription" = "Sou bacharelando em Ciências da Computação e atualmente estou atuando como desenvolvedor iOS. Meu objetivo é solucionar problemas e desafios através de aplicativos ou softwares da melhor forma possível, desde o planejamento e desenvolvimento até o valor agregado ao cliente e produto.";
+
+// Buttons (BTN)
+"BTNLanguages" = "Linguagens";
+"BTNSkills" = "Habilidades";
+"BTNApps" = "Aplicativos";
+"BTNCuriosities" = "Curiosidades";
+"BTNExperiences" = "Experiências";
+"BTNContact" = "Contato";
+
+// Skills Sections (SKS)
+"SKSiOSDev" = "Desenvolvimento iOS";
+"SKSTechSkills" = "Habilidades técnicas";
+"SKSDatabases" = "Bancos de dados";
+
+// Soft Skills (SFT)
+"SFTTeamWork" = "Trabalho em equipe";
+"SFTCommunication" = "Comunicação";
+"SFTProblemSolving" = "Resolução de problemas";
+"SFTOrganization" = "Organização";
+"SFTCuriosity" = "Curiosidade";
+"SFTCreativity" = "Criatividade";
+"SFTPerseverance" = "Perseverança";
+"SFTResourcefulness" = "Proatividade";
+
+// Apps Sections (APS)
+"APSMadeByMe" = "Feitos por mim";
+"APSCollabs" = "Colaborações";
+
+// Experiences Sections (EXS)
+"EXSEducation" = "Educação";
+"EXSProfessional" = "Profissional";
+
+// Experience Item Title (EIT)
+"EITUCB" = "Universidade Católica de Brasília";
+"EITFreela" = "Desenvolvedor freelancer";
+
+// Experience Item Description (EID)
+"EIDComputerScience" = "Bacharelado em Ciência da Computação";
+"EIDDeveloperAcademy" = "Capacitação em desenvolvimento iOS";
+"EIDFreela" = "Solucionador de problemas através de aplicativos";
+"EIDFreelaTime" = "atualmente";
+
+// Curiosities (CST)
+"CST1st" = "Estudo programação desde o ensino médio e aprendi a maioria das linguagens que sei por fora da universidade, algumas até mesmo antes.";
+"CST2nd" = "Fiz a versão inicial do aplicativo Secret.ly sozinho em menos de um mês e meio.";
+"CST3rd" = "Trabalhei em uma loja de hardware quando era adolescente com assistência técnica e suporte. Também passei um tempo fazendo trabalhos como designer freelancer.";

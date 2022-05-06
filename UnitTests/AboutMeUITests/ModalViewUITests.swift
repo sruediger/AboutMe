@@ -7,15 +7,12 @@
 
 import XCTest
 
-extension ModalViewUITests {
+final class ModalViewUITests: AboutMeUITests {
     
     func testScrollLanguages() throws {
         guard let app = self.mockedApp else { return }
-        
-        app.instance.launch()
-        
-        let languagesSubviewButton = app.instance.buttons["Languages"]
-        
+                
+        let languagesSubviewButton = app.instance.buttons[app.localizedString("BTNLanguages", self.classForCoder)]
         app.assertButtonExistsAndTap(button: languagesSubviewButton)
         
         for index in 0..<3 {
@@ -30,10 +27,7 @@ extension ModalViewUITests {
     func testScrollSkills() throws {
         guard let app = self.mockedApp else { return }
         
-        app.instance.launch()
-        
-        let skillsSubviewButton = app.instance.buttons["Skills"]
-        
+        let skillsSubviewButton = app.instance.buttons[app.localizedString("BTNSkills", self.classForCoder)]
         app.assertButtonExistsAndTap(button: skillsSubviewButton)
         
         for index in 0..<3 {
@@ -50,22 +44,17 @@ extension ModalViewUITests {
         XCTAssertNotNil(self.mockedApp)
     }
     
-    
     func testOpenContactsWebView() throws {
         guard let app = self.mockedApp else { return }
         
-        app.instance.launch()
-        
-        let contactsSubviewButton = app.instance.buttons["Contact"]
-        
+        let contactsSubviewButton = app.instance.buttons[app.localizedString("BTNContact", self.classForCoder)]
         app.assertButtonExistsAndTap(button: contactsSubviewButton)
         
         AvailableContacts.allCases.forEach {
             let contactButton = app.instance.buttons[$0.description]
             
             app.assertButtonExistsAndTap(button: contactButton)
-
-            XCTAssert(contactButton.waitForExistence(timeout: 1))
+            XCTAssert(contactButton.waitForExistence(timeout: 1.5))
 
             // Dismiss the modal
             app.instance.swipeDown(velocity: .fast)
@@ -74,13 +63,22 @@ extension ModalViewUITests {
     }
     
     func testOpenAndCloseAllModals() throws {
+        XCTAssertNoThrow(try self.testOpenAndCloseAllModals(withAutoLayout: false))
+        XCTAssertNoThrow(try self.testOpenAndCloseAllModals(withAutoLayout: true))
+    }
+    
+    func testOpenAndCloseAllModals(withAutoLayout: Bool) throws {
         guard let app = self.mockedApp else { return }
-        
-        app.instance.launch()
+                
         MainScreenSubview.allCases.forEach {
-            let button = app.instance.buttons[$0.description]
+            let button = app.instance.buttons[app.localizedString($0.description, self.classForCoder)]
             
             app.assertButtonExistsAndTap(button: button)
+            
+            if withAutoLayout {
+                for _ in 0..<4 { app.toggleOrientation(of: XCUIDevice.shared) }
+            }
+            
             app.instance.swipeUp()
             app.instance.swipeDown()
             
@@ -100,37 +98,4 @@ extension ModalViewUITests {
         }
     }
     
-}
-
-final class ModalViewUITests: XCTestCase {
-    private var mockedApp: MockedApp? = nil
-
-    override func setUp() {
-        NSLog("%@", "setUp")
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        self.mockedApp = MockedApp()
-    }
-    
-    override func tearDown()  {
-        NSLog("%@", "tearDown§")
-        super.tearDown()
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        self.mockedApp = nil
-    }
-    
-    override func setUpWithError() throws {
-        NSLog("%@", "setUpWithError")
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        NSLog("%@", "tearDownWithError")
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
 }
