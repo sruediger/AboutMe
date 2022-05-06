@@ -8,7 +8,6 @@
 import UIKit
 
 public final class TestDummy {
-    
     /// Sergio's apps URLs
     private var appsURLs: [URL?] {
         let appStoreEndpoint: String = "https://apps.apple.com/us/app/apple-store/"
@@ -43,18 +42,18 @@ public final class TestDummy {
         }()
         
         let _ = {() in // Fetch Programming Languages
-            let contacts: [String] = ["C", "Cpp", "Haskell", "Java", "ObjectiveC", "Python", "Rust", "ShellScript", "Solidity", "Swift"]
-            contacts.forEach { images.append(UIImage(named: String("Languages/").appending($0))) }
+            let langs: [String] = ["C", "Cpp", "Haskell", "Java", "ObjectiveC", "Python", "Rust", "ShellScript", "Solidity", "Swift"]
+            langs.forEach { images.append(UIImage(named: String("Languages/").appending($0))) }
         }()
         
         let _ = {() in // Fetch Tech Skills
-            let contacts: [String] = ["AppStore", "CoreData", "Figma", "Git", "Jenkins", "Linux", "MongoDB", "MySQL", "Photoshop", "Postgresql", "SQLite", "SwiftUI", "Testflight", "UIKit", "Xcode"]
-            contacts.forEach { images.append(UIImage(named: String("TechSkills/").appending($0))) }
+            let skills: [String] = ["AppStore", "CoreData", "Figma", "Git", "Jenkins", "Linux", "MongoDB", "MySQL", "Photoshop", "Postgresql", "SQLite", "SwiftUI", "Testflight", "UIKit", "Xcode"]
+            skills.forEach { images.append(UIImage(named: String("TechSkills/").appending($0))) }
         }()
         
         let _ = {() in // Fetch Other assets (uncategorized)
-            let contacts: [String] = ["memojiWWDC21"]
-            contacts.forEach { images.append(UIImage(named: String("Sergio/").appending($0))) }
+            let others: [String] = ["memojiWWDC21"]
+            others.forEach { images.append(UIImage(named: String("Sergio/").appending($0))) }
         }()
         
         return images
