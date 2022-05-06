@@ -30,7 +30,7 @@ extension ExperienceItem {
     /** Getter that returns all Sérgio's educational experiences
         - Returns Array<ExperienceItem>*/
     public static func getSergioEducation() -> [ExperienceItem] {
-        let educations: [ExperienceItem] = [ExperienceItem(name: "Catholic University of Brasilia", shortDescription: "Bachelor in Computer Science", duration: "2019 - 2022", imagePath: "building.columns"), ExperienceItem(name: "Apple Developer Academy", shortDescription: "iOS development capacitation", duration: "2021 - 2022", imagePath: "character.book.closed")]
+        let educations: [ExperienceItem] = [ExperienceItem(name: String.localized("EITUCB"), shortDescription: String.localized("EIDComputerScience"), duration: "2019 - 2022", imagePath: "building.columns"), ExperienceItem(name: "Apple Developer Academy", shortDescription:String.localized("EIDDeveloperAcademy"), duration: "2021 - 2022", imagePath: "command")]
         
         return educations
     }
@@ -38,7 +38,7 @@ extension ExperienceItem {
     /** Getter that returns all Sérgio's professional experiences
         - Returns Array<ExperienceItem>*/
     public static func getSergioExperiences() -> [ExperienceItem] {
-        let experiences: [ExperienceItem] = [ExperienceItem(name: "Freelance Developer", shortDescription: "Problem solver through apps", duration: "2020 - nowadays", imagePath: "laptopcomputer.and.iphone")]
+        let experiences: [ExperienceItem] = [ExperienceItem(name: String.localized("EITFreela"), shortDescription: String.localized("EIDFreela"), duration: "2020 - \(String.localized("EIDFreelaTime"))", imagePath: "laptopcomputer.and.iphone")]
         
         return experiences
     }

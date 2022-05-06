@@ -22,7 +22,7 @@ struct MainScreenView: View {
     var body: some View {
         NavigationView {
             self.createScrollableCardView()
-                .navigationTitle(Text("About Me"))
+                .navigationTitle(Text(String.localized("STXMainTitle")))
                 .navigationBarTitleDisplayMode(.automatic)
                 .background(Color("Colors/background").ignoresSafeArea())
         }.navigationViewStyle(.stack)
@@ -34,7 +34,7 @@ struct MainScreenView: View {
 struct MainScreenView_Previews: PreviewProvider {
     static var previews: some View {
         MainScreenView()
-            .preferredColorScheme(.light)
+       //     .preferredColorScheme(.light)
             .previewInterfaceOrientation(.portrait)
     }
 }

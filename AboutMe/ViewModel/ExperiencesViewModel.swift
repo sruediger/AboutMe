@@ -20,7 +20,7 @@ struct ExperiencesViewModel {
     /// - Parameter index: Index of the title
     /// - Returns String containing the section title
     internal func getSection(titleAt index: Int) -> String {
-        return index == 0 ? "Education" : "Professional"
+        return index == 0 ? String.localized("EXSEducation") : String.localized("EXSProfessional")
     }
     
     /// Fetch the ExperienceItem section items
