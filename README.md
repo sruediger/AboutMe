@@ -1,6 +1,6 @@
 # AboutMe (Who am I ?)
 
-[![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://shields.io/) [![iOS](https://img.shields.io/badge/iOS/Mac-000000?style=for-the-badge&logo=ios&logoColor=white)](https://shields.io/) [![Release version](https://img.shields.io/badge/release-v1.1_beta-blue.svg?&style=for-the-badge)](https://shields.io/) [![Size](https://img.shields.io/badge/size-7.6_MB-teal.svg?style=for-the-badge)](https://shields.io/)
+[![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://shields.io/) [![iOS](https://img.shields.io/badge/iOS/Mac-000000?style=for-the-badge&logo=ios&logoColor=white)](https://shields.io/) [![Release version](https://img.shields.io/badge/release-v1.1-blue.svg?&style=for-the-badge)](https://shields.io/) [![Size](https://img.shields.io/badge/size-7.6_MB-mint.svg?style=for-the-badge)](https://shields.io/)
 
 #### [Versão em português](README_ptBR.md)
 App created to show a bit of my resume and portfolio, made 100% in Swift implementing the MVVM architecture and using native libraries like SwiftUI to build all the interfaces.
