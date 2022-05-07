@@ -73,7 +73,7 @@ final class ModalViewUITests: AboutMeUITests {
         MainScreenSubview.allCases.forEach {
             let button = app.instance.buttons[app.localizedString($0.description, self.classForCoder)]
             
-            app.assertButtonExistsAndTap(button: button)
+            app.assertButtonExistsAndTap(button: button, customTimeout: 0.5)
             
             if withAutoLayout {
                 for _ in 0..<4 { app.toggleOrientation(of: XCUIDevice.shared) }
