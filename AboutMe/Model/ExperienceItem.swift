@@ -28,18 +28,16 @@ struct ExperienceItem: Identifiable {
 extension ExperienceItem {
     
     /** Getter that returns all Sérgio's educational experiences
-        - Returns Array<ExperienceItem>*/
+    - Returns Array<ExperienceItem> */
     public static func getSergioEducation() -> [ExperienceItem] {
-        let educations: [ExperienceItem] = [ExperienceItem(name: String.localized("EITUCB"), shortDescription: String.localized("EIDComputerScience"), duration: "2019 - 2022", imagePath: "building.columns"), ExperienceItem(name: "Apple Developer Academy", shortDescription:String.localized("EIDDeveloperAcademy"), duration: "2021 - 2022", imagePath: "command")]
-        
+        let educations: [ExperienceItem] = [ExperienceItem(name: "Apple Developer Academy", shortDescription: String.localized("EIDDeveloperAcademy"), duration: "2021 - 2022", imagePath: "command"), ExperienceItem(name: String.localized("EITUCB"), shortDescription: String.localized("EIDComputerScience"), duration: "2019 - 2022", imagePath: "building.columns")]
         return educations
     }
     
     /** Getter that returns all Sérgio's professional experiences
-        - Returns Array<ExperienceItem>*/
+        - Returns Array<ExperienceItem> */
     public static func getSergioExperiences() -> [ExperienceItem] {
         let experiences: [ExperienceItem] = [ExperienceItem(name: String.localized("EITFreela"), shortDescription: String.localized("EIDFreela"), duration: "2020 - \(String.localized("EIDFreelaTime"))", imagePath: "laptopcomputer.and.iphone")]
-        
         return experiences
     }
     
