@@ -19,7 +19,7 @@ public final class MockedApp {
     
     /// Helper method that fetch an NSLocalizedString. By default the XCTest framework doesn't enable string localization, that's why an auxiliary method is required besides the String+Utils localized method.
     /// - Parameter Identifier: Localized String identifier, defined at Localizable.strings
-    /// - Class that called this method
+    /// - Parameter caller: Test Class that called this method
     /// - Returns the localized String for the specific caller
     public func localizedString(_ identifier: String, _ caller: AnyClass) -> String {
         return NSLocalizedString(identifier, bundle: Bundle(for: caller), comment: "")
@@ -27,8 +27,8 @@ public final class MockedApp {
     
     /// Assert that a button exists and tap it
     /// - Parameter button: XCUIElement object that represent this app's buttons
-    internal func assertButtonExistsAndTap(button: XCUIElement) {
-        XCTAssert(button.exists)
+    internal func assertButtonExistsAndTap(button: XCUIElement, customTimeout: CGFloat = 0) {
+        XCTAssert(customTimeout != 0 ? button.waitForExistence(timeout: customTimeout) : button.exists)
         button.tap()
     }
     
