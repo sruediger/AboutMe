@@ -9,15 +9,15 @@ import XCTest
 
 /// Base class inherited by the other UITest cases that contains the default methods implementation
 open class AboutMeUITests: XCTestCase {
-    internal var mockedApp: MockedApp? = nil
+    internal var mockedApp: MockedApp!
 
     override open func setUp() {
         NSLog("%@", "setUp")
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
         self.mockedApp = MockedApp()
-        self.mockedApp?.instance.launch()
-        self.mockedApp?.restartOrientation()
+        self.mockedApp.instance.launch()
+        self.mockedApp.restartOrientation()
     }
     
     override open func tearDown()  {
