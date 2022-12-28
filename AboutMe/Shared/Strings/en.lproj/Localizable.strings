@@ -10,13 +10,13 @@
 "STXMainTitle" = "About Me";
 "STXOccupation" = "iOS developer & software engineer";
 "STXLocation" = "Brasília, Brazil";
-"STXDescription" = "I am majoring in Computer Science and currently working as an iOS developer. My goal is to solve problems and challenges through softwares or apps in the best way possible, from planning and development to the customer's added value and product.";
+"STXDescription" = "I'm graduating in Computer Science and currently working as an iOS developer. My goal is to solve problems and challenges through softwares or apps in the best way possible, from planning and development to the customer's and product added value.";
 
 // Buttons (BTN)
 "BTNLanguages" = "Languages";
 "BTNSkills" = "Skills";
 "BTNApps" = "Apps";
-"BTNCuriosities" = "Curiosities";
+"BTNAchievements" = "Achievements";
 "BTNExperiences" = "Experiences";
 "BTNContact" = "Contact";
 
@@ -53,7 +53,6 @@
 "EIDFreela" = "Problem solver through apps";
 "EIDFreelaTime" = "nowadays";
 
-// Curiosities (CST)
-"CST1st" = "I have been studying programming since my adolescence and have learned most of the programming languages I know outside of university, some even before.";
-"CST2nd" = "I made the initial version of the Secret.ly app all by myself in less than a month and a half.";
-"CST3rd" = "When I was a teenager I've worked in a hardware store with technical assistance and support, besides having spent some time doing freelance graphic design jobs.";
+// Achievements (ACH)
+"ACHSwiftWWDCBody" = "Chosen as one of 350 winners worldwide, my project for this year's edition was an interactive scene about information security that demonstrates in practice the importance of having knowledge about the subject, as well as giving a brief introduction to it.";
+"ACHEcampBody" = "Entrepreneur Camp is an Apple initiative to stimulate the growth of potential app-driven businesses through mentoring, exclusive workshops and much more. %@ was chosen as one of the apps selected for the late 2022 edition.";

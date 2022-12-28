@@ -16,7 +16,7 @@
 "BTNLanguages" = "Linguagens";
 "BTNSkills" = "Habilidades";
 "BTNApps" = "Aplicativos";
-"BTNCuriosities" = "Curiosidades";
+"BTNAchievements" = "Conquistas";
 "BTNExperiences" = "Experiências";
 "BTNContact" = "Contato";
 
@@ -53,7 +53,6 @@
 "EIDFreela" = "Solucionador de problemas através de aplicativos";
 "EIDFreelaTime" = "atualmente";
 
-// Curiosities (CST)
-"CST1st" = "Estudo programação desde o ensino médio e aprendi a maioria das linguagens que sei por fora da universidade, algumas até mesmo antes.";
-"CST2nd" = "Fiz a versão inicial do aplicativo Secret.ly sozinho em menos de um mês e meio.";
-"CST3rd" = "Trabalhei em uma loja de hardware quando era adolescente com assistência técnica e suporte. Também passei um tempo fazendo trabalhos como designer freelancer.";
+// Achievements (ACH)
+"ACHSwiftWWDCBody" = "Escolhido como um de 350 vencedores mundiais, meu projeto para a edição desse ano foi uma cena interativa sobre segurança da informação que demonstra na prática a importância de ter conhecimento sobre o tema, além de dar uma breve introdução ao mesmo.";
+"ACHEcampBody" = "Entrepreneur Camp é uma iniciativa da Apple para estimular o crescimento de negócios baseados em aplicativos com potencial através de mentorias, workshops exclusivos e muito mais. %@ foi escolhido como um dos aplicativos selecionados para a edição do final de 2022.";
