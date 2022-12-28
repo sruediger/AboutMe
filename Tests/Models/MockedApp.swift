@@ -5,7 +5,6 @@
 //  Created by Sérgio Ruediger on 04/05/22.
 //
 
-import Foundation
 import XCTest
 
 /// Class that mocks this app to perform UITests
@@ -15,7 +14,10 @@ public final class MockedApp {
     
     // - MARK: TODO move all app strings to Localizable file and create models to turn them and other components accessible to the main and both tests targets
     
-    internal lazy var mainScreenTexts: [String] = [String.localized("STXMainTitle"), "Sérgio Gomes Ruediger", String.localized("STXOccupation"), String.localized("STXLocation"), String.localized("BTNLanguages"), String.localized("BTNSkills"), String.localized("BTNApps"), String.localized("BTNExperiences"), String.localized("BTNCuriosities"), String.localized("BTNContact")]
+    internal lazy var mainScreenTexts: [String] = [String.localized("STXMainTitle"), "Sérgio Gomes Ruediger", String.localized("STXOccupation"), String.localized("STXLocation"), String.localized("BTNLanguages"), String.localized("BTNSkills"), String.localized("BTNApps"), String.localized("BTNExperiences"), String.localized("BTNAchievements"), String.localized("BTNContact")]
+    
+    /// Computed property that checks if the device is an iPad
+    internal var iPadDevice: Bool { UIDevice.current.userInterfaceIdiom == .pad }
     
     /// Helper method that fetch an NSLocalizedString. By default the XCTest framework doesn't enable string localization, that's why an auxiliary method is required besides the String+Utils localized method.
     /// - Parameter Identifier: Localized String identifier, defined at Localizable.strings
@@ -28,8 +30,8 @@ public final class MockedApp {
     /// Assert that a button exists and tap it
     /// - Parameter button: XCUIElement object that represent this app's buttons
     internal func assertButtonExistsAndTap(button: XCUIElement, customTimeout: CGFloat = 0) {
+        defer { button.tap() }
         XCTAssert(customTimeout != 0 ? button.waitForExistence(timeout: customTimeout) : button.exists)
-        button.tap()
     }
     
     /// Set the device orientation to portrait if not set

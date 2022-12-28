@@ -27,6 +27,8 @@ public final class TestDummy {
     /// All URLs used by this app
     internal var URLs: [URL?] { self.contactsURLs + self.appsURLs } // The '+' operator concatenates the operand arrays
     
+    // - MARK TODO: Reimplement
+    
     /// All assets used by this app repredented as an Array<UIImage>
     internal var assets: [UIImage?] {
         var images: [UIImage?] = []
