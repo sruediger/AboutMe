@@ -9,13 +9,10 @@ import SwiftUI
 
 /// Apps subview presented by the PopupView
 internal struct AppsView: ViewFactory, AppsScreen {
-    /// Action that happens when an app is tapped
-    let completionHandler: Callback
     /// Object used to control the View
     @State var viewModel: AppsViewModel
     
-    init(viewModel: AppsViewModel = .init(), completionHandler: @escaping Callback) {
-        self.completionHandler = completionHandler
+    init(viewModel: AppsViewModel = .init()) {
         self._viewModel = State(initialValue: viewModel)
     }
     

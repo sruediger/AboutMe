@@ -104,11 +104,11 @@ private extension PopupView {
                     switch self.subview {
                         case .skills: SkillsView()
                         case .experience: ExperiencesView()
-                        case .apps: AppsView { viewModel.openOnTap(webItem: $0) }
-                        case .contact: ContactsView { viewModel.openOnTap(webItem: $0) }
-                        case .achievements: AchievementsView { viewModel.openOnTap(webItem: $0) }
-                        case .languages: ProgrammingLanguagesView { viewModel.openOnTap(webItem: $0) }
-                        default: EmptyView()
+                        case .apps: AppsView()
+                        case .contact: ContactsView()
+                        case .achievements: AchievementsView()
+                        case .languages: ProgrammingLanguagesView()
+                        case .none: EmptyView()
                     }
                 }
                 .padding(.bottom, self.windowContentBottomPadding)

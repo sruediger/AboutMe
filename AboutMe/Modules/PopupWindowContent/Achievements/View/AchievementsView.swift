@@ -11,12 +11,6 @@ import SwiftUI
 internal struct AchievementsView: ViewFactory, AchievementsScreen {
     /// Orientation manager
     @Orientation var orientation
-    /// Task that happens when an achievement is tapped
-    let completionHandler: Callback
-    
-    init(completionHandler: @escaping Callback) {
-        self.completionHandler = completionHandler
-    }
     
     @ViewBuilder
     /// Creates the main ContentView
