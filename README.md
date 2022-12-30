@@ -3,7 +3,7 @@
 [![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://shields.io/) [![iOS](https://img.shields.io/badge/iOS/Mac-000000?style=for-the-badge&logo=ios&logoColor=white)](https://shields.io/) [![Release version](https://img.shields.io/badge/release-v1.1-blue.svg?&style=for-the-badge)](https://shields.io/) [![Size](https://img.shields.io/badge/size-7.6_MB-mint.svg?style=for-the-badge)](https://shields.io/)
 
 #### [Versão em português](README_ptBR.md)
-App created to show a bit of my resume and portfolio, made 100% in Swift implementing the MVVM architecture and using native libraries like SwiftUI to build all the interfaces.
+App created to show a bit of my resume and portfolio, made 100% in Swift implementing the MVVM architecture and using only native libraries.
 
 ## Features
 The app is composed of a main screen with the following buttons that open their respective windows:
@@ -11,15 +11,18 @@ The app is composed of a main screen with the following buttons that open their 
 * Skills 
 * Applications
 * Experiences
-* Curiosities
+* Achievements
 * Contacts
+
 ### Other features and topics explored 
-* MVVM architectural pattern and SwiftUI 
+* MVVM architectural pattern with SwiftUI 
+* Protocol Oriented Programming
 * Design Patterns
-* Unit tests
-* Interface testing 
+* Autolayout
 * Dynamic Type
-* Multi-language
+* Localization (Multi-language)
+* Unit and UI tests
+* Performance optimizations
 * Adaptable interfaces (dark and light mode)
 
 ## Minimum Requisites
@@ -31,9 +34,9 @@ The app is composed of a main screen with the following buttons that open their 
 * Download or clone the repository and open the Xcode project file (.xcodeproj).
 * Compile and run the app by pressing ⌘B + ⌘R
 
-### Testing
-The backend and frontend unit tests are located in the UnitTests folder. To run them just press the ⌘U combination or open the files and choose the tests manually. Xcode's left sidebar known as the Navigator also allows you to view and run the tests and even see the coverage of each one in the Report Navigator item. 
+## Testing
+The Tests folder contains the project's unit and UI tests. Press ⌘U to run them all at once or choose the desired ones manually from Xcode's sidebar Test Navigator or by opening the files. 
 
-The coverage of the backend tests in this version is 100% for all devices, while the frontend tests are over 80% for all devices due to the autolayout and screen sizes.   
+The test schemas have been configured to provide test coverage, which can be accessed via the Report Navigator after running them.
 
-Feel free to fork, modify, reverse engineer or use this repository as a template to make your own. Contributions are also very welcome! 
+All project files have been tested with nearly 100% coverage in the current version.
