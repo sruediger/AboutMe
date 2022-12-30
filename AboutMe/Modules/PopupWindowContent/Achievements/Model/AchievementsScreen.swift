@@ -33,5 +33,5 @@ internal extension AchievementsScreen {
     // - MARK: Achievement Properties
     var achievementBackgroundOpacity: CGFloat { 0.16 }
     var achievementBackgroundShadowRadius: CGFloat { 1 }
-    var achievementTextMinimumScaleFactor: CGFloat { 0.64 }
+    var achievementTextMinimumScaleFactor: CGFloat { 0.8 }
 }

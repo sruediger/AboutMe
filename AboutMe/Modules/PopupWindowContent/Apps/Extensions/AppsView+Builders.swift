@@ -36,8 +36,9 @@ extension AppsView {
     /// - Returns InteractiveAppsRowSubview
     private func createInteractiveAppsRowSubview(for items: [AnimatableScroll]) -> some View {
         HorizontalCarouselView(items: items) {
-            guard let tappedItem = items[$0] as? WebViewRepresentable else { return }
-            completionHandler(tappedItem)
+            if let tappedItem = items[$0] as? WebViewRepresentable {
+                self.update(subject: .init(tappedItem.url))
+            }
         }
     }
 }

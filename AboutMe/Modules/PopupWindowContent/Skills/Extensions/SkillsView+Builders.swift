@@ -45,7 +45,7 @@ private extension SkillsView {
     /// - Returns HorizontalCarouselView
     func createComposedItems(forRow index: Int) -> some View {
         let items = viewModel.getSkillsItems(of: index)
-        HorizontalCarouselView(items: items) { _ in }
+        HorizontalCarouselView(items: items) { _ = $0 }
     }
     
     @ViewBuilder

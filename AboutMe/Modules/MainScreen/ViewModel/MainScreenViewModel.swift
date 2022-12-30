@@ -8,13 +8,13 @@
 import class UIKit.UIColor
 import class UIKit.UIDevice
 import class UIKit.UIBlurEffect
-import struct SwiftUI.Published
+import struct Combine.Published
 import struct CoreGraphics.CGFloat
-import protocol Foundation.ObservableObject
+import protocol Combine.ObservableObject
 import class UIKit.UINavigationBarAppearance
 
 /// Structure used to control the MainScreenView
-final class MainScreenViewModel: ObservableObject, UserDevice {
+final class MainScreenViewModel: ObservableObject, DeviceProperties {
     /// Subview that will be opened by the PopupView
     @Published internal var presentedSubview: MainScreenSubview?
     /// Styled UINavigationBarAppearance
@@ -57,8 +57,9 @@ internal extension MainScreenViewModel {
     /// Set a MainScreenSubview to be presented
     /// - Parameter subview: Subview to present
     func set(subview: MainScreenSubview) {
-        guard self.presentedSubview == nil else { return }
-        self.presentedSubview = subview
-        HapticsManager.trigger(.heavy)
+        if self.presentedSubview == nil {
+            self.presentedSubview = subview
+            HapticsManager.trigger(.heavy)
+        }
     }
 }

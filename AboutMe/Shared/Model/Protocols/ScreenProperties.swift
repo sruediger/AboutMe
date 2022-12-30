@@ -9,7 +9,7 @@ import class UIKit.UIScreen
 import struct CoreGraphics.CGSize
 
 /// Protocol that defines common screen properties
-protocol ScreenProperties: UserDevice {
+protocol ScreenProperties: DeviceProperties {
     /// Indicates if the device is an iPhone 8/SE2 or smaller (iPods)
     var smallPhone: Bool { get }
     /// User's current device screen dimensions

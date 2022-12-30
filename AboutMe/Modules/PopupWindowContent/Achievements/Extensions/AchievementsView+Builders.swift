@@ -61,7 +61,6 @@ private extension AchievementsView {
             Text(achievement.description)
                 .font(.system(self.contentFont, design: .rounded))
                 .fontWeight(.medium)
-                .minimumScaleFactor(self.achievementTextMinimumScaleFactor)
         }
         .padding(.horizontal, self.defaultPadding)
         .multilineTextAlignment(.leading)
@@ -72,7 +71,7 @@ private extension AchievementsView {
     /// - Parameter achievement: Button's data source
     /// - Returns AchievementButtonView
     func createAchievementButton(_ achievement: Achievement) -> some View {
-        Button(action: { self.completionHandler(achievement) }) {
+        Button(action: { self.update(subject: .init(achievement.url)) }) {
             ZStack {
                 BlurredRectangleView(
                     style: .prominent,

@@ -11,7 +11,7 @@ extension Application: WebViewRepresentable {
     /// App Store URL
     internal var url: URL {
         #if targetEnvironment(simulator)
-            return URL(string: "https://developer.apple.com")! // For some reason iOS simulators cannot open App Store links, even with the original https apps.apple.com url.
+            return URL.defaultWebViewURL // For some reason iOS simulators cannot open App Store links, even with the original https apps.apple.com url
         #else
             let appStoreURL: String = "itms-apps://itunes.apple.com/us/app/apple-store/"
             switch self {
