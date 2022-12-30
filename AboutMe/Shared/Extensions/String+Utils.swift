@@ -5,7 +5,7 @@
 //  Created by Sérgio Ruediger on 27/04/22.
 //
 
-import Foundation
+import func Foundation.NSLocalizedString
 
 extension String {
     
