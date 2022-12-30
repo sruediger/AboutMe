@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "A3265EFA-727C-4EB3-B66E-C64E1C9309BE",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:AboutMe.xcodeproj",
+        "identifier" : "F2BD67062818B7A7009701ED",
+        "name" : "AboutMeTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:AboutMe.xcodeproj",
+        "identifier" : "F2BD67102818B7A7009701ED",
+        "name" : "AboutMeUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
