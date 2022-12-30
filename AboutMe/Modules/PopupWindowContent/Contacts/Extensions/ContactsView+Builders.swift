@@ -27,9 +27,7 @@ private extension ContactsView {
     /// - Parameter contact: Button's data source
     /// - Returns ContactButtonView
     func createContactButton(for contact: Contact) -> some View {
-        Button {
-            DispatchQueue.main.async { self.completionHandler(contact) }
-        } label: {
+        Button(action: { self.update(subject: .init(contact.url)) }) {
             VStack(alignment: .center, spacing: self.verticalSpacing) {
                 ImageView(asset: contact.image)
                 

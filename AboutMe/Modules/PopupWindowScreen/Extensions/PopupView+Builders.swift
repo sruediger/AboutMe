@@ -17,7 +17,7 @@ extension PopupView: ViewFactory {
             Color.black
                 .ignoresSafeArea()
                 .opacity(self.backgroundOpacity)
-                .onTapGesture { self.subview = nil } // Dismiss the presented modal when the background is tapped
+                .onTapGesture { self.subview = nil }
             
             let windowSize = viewModel.getSizeOf(content: subview, deviceInLandscape: orientation.isLandscape, for: self.screenDimensions)
             

@@ -51,7 +51,7 @@ struct HorizontalCarouselView: ComponentCreator, ScreenProperties {
                         .disabled(!items[index].isInteractive)
                     }.frame(width: 112, height: 112)
                 }
-            }.padding(.leading, 15).padding(.trailing, 15)
+            }.padding(.horizontal, 15)
         }
     }
 }
