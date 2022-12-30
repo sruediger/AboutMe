@@ -6,43 +6,39 @@
 //
 
 import class UIKit.UIDevice
-import struct SwiftUI.Published
+import struct Combine.Published
 import class UIKit.UIApplication
 import class UIKit.UIWindowScene
 import class Combine.AnyCancellable
 import enum UIKit.UIDeviceOrientation
-import class Foundation.NotificationCenter
-import protocol Foundation.ObservableObject
+import protocol Combine.ObservableObject
 
 /// Class that manages the user's device orientation state
 open class OrientationManager: ObservableObject {
     /// User device orientation state
     @Published private(set) var type: UIDeviceOrientation = .unknown
     /// Combine publisher cancellables
-    private var cancellables: Set<AnyCancellable> = []
+    private var disposables: Set<AnyCancellable> = []
     /// Class singleton's shared instance
     public static let shared = OrientationManager()
 
     private init() {
-        guard let scene = UIApplication.shared.connectedScenes.first,
-              let sceneDelegate = scene as? UIWindowScene else { return }
-        
-        let orientation = sceneDelegate.interfaceOrientation
-        
-        switch orientation {
-            case .portrait: type = .portrait
-            case .portraitUpsideDown: type = .portraitUpsideDown
-            case .landscapeLeft: type = .landscapeLeft
-            case .landscapeRight: type = .landscapeRight
-                
-            default: type = .unknown
+        if let scene = UIApplication.shared.connectedScenes.first,
+           let sceneDelegate = scene as? UIWindowScene,
+           let deviceOrientation = UIDeviceOrientation(rawValue: sceneDelegate.interfaceOrientation.rawValue) {
+            self.type = deviceOrientation
+            
+            self.orientationNotification
+                .store(in: &disposables)
         }
-        
-        NotificationCenter.default
+    }
+    
+    /// Subscriber of UIDevice's orientationDidChangeNotification
+    private lazy var orientationNotification: AnyCancellable = {
+        NotificationManager
             .publisher(for: UIDevice.orientationDidChangeNotification)
-            .sink() { [weak self] _ in
+            .sink { [weak self] _ in
                 self?.type = UIDevice.current.orientation
             }
-            .store(in: &cancellables)
-    }
+    }()
 }

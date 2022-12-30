@@ -112,11 +112,19 @@ private extension PopupView {
                     }
                 }
                 .padding(.bottom, self.windowContentBottomPadding)
-                .frame(width: geometry.size.width)
                 .frame(minHeight: geometry.size.height)
-            }.cornerRadius(self.defaultCornerRadius)
-        }.sheet(isPresented: $viewModel.webView.show) {
-            WebView(url: viewModel.webView.contentURL)
+                .frame(width: geometry.size.width)
+            }
+            .cornerRadius(self.defaultCornerRadius)
+        }
+        .onChange(of: viewModel.webView.contentURL) { _ in
+            self.viewModel.handleWebViewPresentation()
+        }
+        .sheet(isPresented: $viewModel.webView.show) {
+            if let webViewURL = viewModel.webView.contentURL {
+                WebView(url: webViewURL)
+                    .onDisappear { self.viewModel.webView.contentURL = nil }
+            }
         }
     }    
 }
