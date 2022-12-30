@@ -5,12 +5,40 @@
 //  Created by Sérgio Ruediger on 22/12/22.
 //
 
-import class UIKit.UIDevice
-import class UIKit.UIScreen
-import class UIKit.UIApplication
+import class Combine.Future
+import struct Foundation.URL
 import struct CoreGraphics.CGSize
 import struct CoreGraphics.CGFloat
+import class Dispatch.DispatchQueue
 
+// - MARK: WebView tasks
+extension PopupViewModel {
+    
+    /// Handles the WebView presentation
+    internal func handleWebViewPresentation() {
+        if let url = self.webView.contentURL {
+            self.openOnTap(webPageURL: url)
+                .receive(on: DispatchQueue.main)
+                .filter { $0.contentURL != .defaultWebViewURL }
+                .sink { self.didOpen($0) }
+                .store(in: &self.disposableTasks)
+        }
+    }
+    
+    /// Opens a WebPage URL
+    /// - Parameter webPageURL: WebPage's URL
+    /// - Returns A WebViewTask that asynchronously delivers the result
+    private func openOnTap(webPageURL: URL) -> WebViewTask {
+        Future { promise in
+            Task {
+                await self.openURL(webPageURL)
+                promise(.success(self.webView))
+            }
+        }
+    }
+}
+
+// - MARK: View Utils
 internal extension PopupViewModel {
     
     /// Fetch a specific subview's vertical scroll indicator visibility
@@ -22,15 +50,6 @@ internal extension PopupViewModel {
             case .apps, .achievements, .experience, .skills: return true
             case .none: return false
         }
-    }
-    
-    /// Perform the action of an WebViewRepresentable item when it's tapped
-    /// - Parameter webItem: The WebViewRepresentable tapped item
-    func openOnTap(webItem: WebViewRepresentable) {
-        self.webView.contentURL = webItem.url
-        if webItem.url.absoluteString.contains("itms-apps") {
-            UIApplication.shared.open(webItem.url, options: [:], completionHandler: nil) // Open app Store (unavailable on simulator)
-        } else { self.webView.show = true }
     }
 
     /// Fetch a specific subview content size
