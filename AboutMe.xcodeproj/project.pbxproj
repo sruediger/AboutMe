@@ -65,6 +65,8 @@
 		F260D86C295CAB0800D2CD15 /* TechSkill+InteractiveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266A2D6295BCC24000DC5FA /* TechSkill+InteractiveItem.swift */; };
 		F260D86D295CAB0E00D2CD15 /* TechSkill+StringProtocolRawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266A2B62959F3FE000DC5FA /* TechSkill+StringProtocolRawRepresentable.swift */; };
 		F260D86E295CAB0F00D2CD15 /* TechSkill+StringProtocolRawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266A2B62959F3FE000DC5FA /* TechSkill+StringProtocolRawRepresentable.swift */; };
+		F26202AC295DEEE900153972 /* URL+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26202AB295DEEE900153972 /* URL+Utils.swift */; };
+		F26202AE295E22F700153972 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26202AD295E22F700153972 /* NotificationManager.swift */; };
 		F266A220294DF203000DC5FA /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266A21F294DF203000DC5FA /* AchievementsView.swift */; };
 		F266A246294E06F4000DC5FA /* InteractiveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266A245294E06F4000DC5FA /* InteractiveItem.swift */; };
 		F266A253295089C3000DC5FA /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266A252295089C3000DC5FA /* DesignSystem.swift */; };
@@ -128,7 +130,7 @@
 		F266A2D7295BCC24000DC5FA /* TechSkill+InteractiveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266A2D6295BCC24000DC5FA /* TechSkill+InteractiveItem.swift */; };
 		F266A2D9295BDCFE000DC5FA /* AchievementsView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266A2D8295BDCFE000DC5FA /* AchievementsView+Builders.swift */; };
 		F266A2DB295C6299000DC5FA /* ScreenProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266A2DA295C6299000DC5FA /* ScreenProperties.swift */; };
-		F266A2DD295C654D000DC5FA /* UserDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266A2DC295C654C000DC5FA /* UserDevice.swift */; };
+		F266A2DD295C654D000DC5FA /* DeviceProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266A2DC295C654C000DC5FA /* DeviceProperties.swift */; };
 		F295BECC2820D2B600B30346 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295BECB2820D2B600B30346 /* HapticsManager.swift */; };
 		F295BECE2821942D00B30346 /* TestDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295BECD2821942D00B30346 /* TestDummy.swift */; };
 		F297A2DD28229834009D5AE5 /* MainScreenView+Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297A2DC28229834009D5AE5 /* MainScreenView+Builders.swift */; };
@@ -202,6 +204,8 @@
 		F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenSubview.swift; sourceTree = "<group>"; };
 		F260D83E295C7C9E00D2CD15 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		F260D843295CA95500D2CD15 /* MainScreenSubview+TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenSubview+TestUtils.swift"; sourceTree = "<group>"; };
+		F26202AB295DEEE900153972 /* URL+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Utils.swift"; sourceTree = "<group>"; };
+		F26202AD295E22F700153972 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		F266A21F294DF203000DC5FA /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		F266A245294E06F4000DC5FA /* InteractiveItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveItem.swift; sourceTree = "<group>"; };
 		F266A252295089C3000DC5FA /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
@@ -255,7 +259,7 @@
 		F266A2D6295BCC24000DC5FA /* TechSkill+InteractiveItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TechSkill+InteractiveItem.swift"; sourceTree = "<group>"; };
 		F266A2D8295BDCFE000DC5FA /* AchievementsView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AchievementsView+Builders.swift"; sourceTree = "<group>"; };
 		F266A2DA295C6299000DC5FA /* ScreenProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenProperties.swift; sourceTree = "<group>"; };
-		F266A2DC295C654C000DC5FA /* UserDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDevice.swift; sourceTree = "<group>"; };
+		F266A2DC295C654C000DC5FA /* DeviceProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceProperties.swift; sourceTree = "<group>"; };
 		F295BECB2820D2B600B30346 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		F295BECD2821942D00B30346 /* TestDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDummy.swift; sourceTree = "<group>"; };
 		F297A2DC28229834009D5AE5 /* MainScreenView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenView+Builders.swift"; sourceTree = "<group>"; };
@@ -314,11 +318,12 @@
 		F208F2A0294DE50B00DE9F97 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				F260D83E295C7C9E00D2CD15 /* Asset.swift */,
 				F266A27829567779000DC5FA /* BlurredNavigationBarAppearance.swift */,
 				F295BECB2820D2B600B30346 /* HapticsManager.swift */,
-				F266A2A429587B14000DC5FA /* OrientationManager.swift */,
+				F26202AD295E22F700153972 /* NotificationManager.swift */,
 				F266A2A829587C95000DC5FA /* Orientation.swift */,
-				F260D83E295C7C9E00D2CD15 /* Asset.swift */,
+				F266A2A429587B14000DC5FA /* OrientationManager.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -338,12 +343,12 @@
 				F266A2762955CF65000DC5FA /* CustomNavigationBarAppearance.swift */,
 				F208F29C294DD93A00DE9F97 /* ComponentProvider.swift */,
 				F208F29A294DD90F00DE9F97 /* ComponentFactory.swift */,
+				F266A2DC295C654C000DC5FA /* DeviceProperties.swift */,
 				F266A252295089C3000DC5FA /* DesignSystem.swift */,
 				F266A245294E06F4000DC5FA /* InteractiveItem.swift */,
 				F266A293295763D2000DC5FA /* Screen.swift */,
 				F266A2DA295C6299000DC5FA /* ScreenProperties.swift */,
 				F266A2A02957B3C1000DC5FA /* TextProperties.swift */,
-				F266A2DC295C654C000DC5FA /* UserDevice.swift */,
 				F208F298294DD8E200DE9F97 /* ViewFactory.swift */,
 				F266A2B2295937A3000DC5FA /* WebViewHandler.swift */,
 				F266A2B4295937AC000DC5FA /* WebViewDelegate.swift */,
@@ -369,6 +374,7 @@
 				F266A27C29573A52000DC5FA /* ComponentFactory+ViewFactory.swift */,
 				F22E08812818EA4900EB4768 /* String+Utils.swift */,
 				F266A2D4295BCBA2000DC5FA /* TextProperties+Screen.swift */,
+				F26202AB295DEEE900153972 /* URL+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1025,6 +1031,7 @@
 			files = (
 				F266A29229576348000DC5FA /* ContactsScreen.swift in Sources */,
 				F266A2772955CF65000DC5FA /* CustomNavigationBarAppearance.swift in Sources */,
+				F26202AE295E22F700153972 /* NotificationManager.swift in Sources */,
 				F266A253295089C3000DC5FA /* DesignSystem.swift in Sources */,
 				F22E08862818F2FA00EB4768 /* MainScreenSubview.swift in Sources */,
 				F266A2572954A24F000DC5FA /* Experience.swift in Sources */,
@@ -1068,11 +1075,12 @@
 				F266A2DB295C6299000DC5FA /* ScreenProperties.swift in Sources */,
 				F210EE53281D875D0091951E /* Application.swift in Sources */,
 				F210EE4F281D62DC0091951E /* HorizontalCarouselView.swift in Sources */,
+				F26202AC295DEEE900153972 /* URL+Utils.swift in Sources */,
 				F266A2CF295BBCC8000DC5FA /* PopupWindow.swift in Sources */,
 				F266A29B2957AF39000DC5FA /* Achievement.swift in Sources */,
 				F266A29029574E7A000DC5FA /* SkillsView+Builders.swift in Sources */,
 				F297A2F92822C3FE009D5AE5 /* ExperiencesViewModel.swift in Sources */,
-				F266A2DD295C654D000DC5FA /* UserDevice.swift in Sources */,
+				F266A2DD295C654D000DC5FA /* DeviceProperties.swift in Sources */,
 				F266A2C12959FB78000DC5FA /* AvailableContacts+WebViewRepresentable.swift in Sources */,
 				F266A2C5295A5667000DC5FA /* MainScreenView+ViewFactory.swift in Sources */,
 				F266A2592954A751000DC5FA /* AcademicBackground.swift in Sources */,
