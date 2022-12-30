@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "AAAD571C-37BA-4B7B-8D64-930B81353EE1",
+      "id" : "DFB8320C-4226-46BB-92E1-D1F528CCC33F",
       "name" : "Configuration 1",
       "options" : {
 
@@ -9,7 +9,7 @@
     }
   ],
   "defaultOptions" : {
-    "testTimeoutsEnabled" : true
+
   },
   "testTargets" : [
     {
@@ -20,15 +20,6 @@
       }
     },
     {
-      "skippedTests" : [
-        "AboutMeUITestsLaunchTests",
-        "PopupViewUITests\/testOpenAchievementsWebView()",
-        "PopupViewUITests\/testOpenAppsWebView()",
-        "PopupViewUITests\/testOpenContactsWebView()",
-        "PopupViewUITests\/testOpenLanguagesWebView()",
-        "PopupViewUITests\/testScrollLanguages()",
-        "PopupViewUITests\/testScrollSkills()"
-      ],
       "target" : {
         "containerPath" : "container:AboutMe.xcodeproj",
         "identifier" : "F2BD67102818B7A7009701ED",

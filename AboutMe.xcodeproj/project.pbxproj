@@ -202,8 +202,6 @@
 		F22E08812818EA4900EB4768 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 		F22E08832818F2F300EB4768 /* ProgrammingLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguage.swift; sourceTree = "<group>"; };
 		F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenSubview.swift; sourceTree = "<group>"; };
-		F2516C3F295F9825002BC77F /* CITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = CITestPlan.xctestplan; path = Tests/TestPlans/CITestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
-		F2516C42295F9A87002BC77F /* DevTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; name = DevTestPlan.xctestplan; path = AboutMe.xcodeproj/DevTestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
 		F260D83E295C7C9E00D2CD15 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		F260D843295CA95500D2CD15 /* MainScreenSubview+TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenSubview+TestUtils.swift"; sourceTree = "<group>"; };
 		F26202AB295DEEE900153972 /* URL+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Utils.swift"; sourceTree = "<group>"; };
@@ -262,6 +260,8 @@
 		F266A2D8295BDCFE000DC5FA /* AchievementsView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AchievementsView+Builders.swift"; sourceTree = "<group>"; };
 		F266A2DA295C6299000DC5FA /* ScreenProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenProperties.swift; sourceTree = "<group>"; };
 		F266A2DC295C654C000DC5FA /* DeviceProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceProperties.swift; sourceTree = "<group>"; };
+		F266D5D6295F9EE50065A236 /* CITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CITestPlan.xctestplan; sourceTree = "<group>"; };
+		F266D5D7295F9F400065A236 /* DevTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = DevTestPlan.xctestplan; sourceTree = "<group>"; };
 		F295BECB2820D2B600B30346 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		F295BECD2821942D00B30346 /* TestDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDummy.swift; sourceTree = "<group>"; };
 		F297A2DC28229834009D5AE5 /* MainScreenView+Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenView+Builders.swift"; sourceTree = "<group>"; };
@@ -381,13 +381,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		F2516C41295F99E1002BC77F /* TestPlans */ = {
+		F2516C41295F99E1002BC77F /* Plans */ = {
 			isa = PBXGroup;
 			children = (
-				F2516C42295F9A87002BC77F /* DevTestPlan.xctestplan */,
-				F2516C3F295F9825002BC77F /* CITestPlan.xctestplan */,
+				F266D5D6295F9EE50065A236 /* CITestPlan.xctestplan */,
+				F266D5D7295F9F400065A236 /* DevTestPlan.xctestplan */,
 			);
-			path = TestPlans;
+			path = Plans;
 			sourceTree = "<group>";
 		};
 		F260D842295CA93700D2CD15 /* Extensions */ = {
@@ -794,7 +794,7 @@
 		F295BECF2821B14F00B30346 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F2516C41295F99E1002BC77F /* TestPlans */,
+				F2516C41295F99E1002BC77F /* Plans */,
 				F297A3162824CE00009D5AE5 /* Models */,
 				F2BD670A2818B7A7009701ED /* UnitTests */,
 				F2BD67142818B7A7009701ED /* UITests */,
