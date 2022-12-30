@@ -9,7 +9,6 @@ import struct Foundation.URL
 import class WebKit.WKWebView
 import struct Foundation.URLRequest
 import protocol SwiftUI.UIViewRepresentable
-import class Dispatch.DispatchQueue
 
 /// Structure used to create WKWebView instances
 internal struct WebView: UIViewRepresentable {

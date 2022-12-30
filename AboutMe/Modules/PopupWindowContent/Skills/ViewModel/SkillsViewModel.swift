@@ -5,8 +5,6 @@
 //  Created by Sérgio Ruediger on 04/05/22.
 //
 
-import Foundation
-
 /// Structure used to control the SkillsView
 struct SkillsViewModel {
     /// Computed property that contains some Sérgio's soft skills
