@@ -23,15 +23,16 @@ The app is composed of a main screen with the following buttons that open their 
 * Localization (Multi-language)
 * Unit and UI tests
 * Performance optimizations
+* Continuous Integration & Delivery (CI/CD)
 * Adaptable interfaces (dark and light mode)
 
 ## Minimum Requisites
-* Mac OS BigSur
+* MacOS BigSur
 * Xcode 13
 * iOS/iPadOS 15.4
 
 ## How to run
-* Download or clone the repository and open the Xcode project file (.xcodeproj).
+* Download or clone the repository and open the Xcode project file (.xcodeproj)
 * Compile and run the app by pressing ⌘B + ⌘R
 
 ## Testing

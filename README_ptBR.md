@@ -23,15 +23,16 @@ O aplicativo é composto por uma tela principal com os seguintes botões que abr
 * Localização (Multi-idioma)
 * Testes unitários e de UI
 * Otimizações de performance
+* Integração e Entrega Contínua (CI/CD)
 * Interfaces adaptáveis (dark e light mode)
 
 ## Requisitos mínimos
-* Mac OS BigSur
+* MacOS BigSur
 * Xcode 13
 * iOS/iPadOS 15.4 
 
 ## Como executar
-* Faça o download ou clone o repositório e abra o arquivo do projeto Xcode (.xcodeproj).
+* Faça o download ou clone o repositório e abra o arquivo do projeto Xcode (.xcodeproj)
 * Compile e execute o app pressionando ⌘B + ⌘R
 
 ## Testes
