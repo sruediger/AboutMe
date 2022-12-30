@@ -9,17 +9,19 @@ import SwiftUI
 
 /// Programming Languages subview presented by the PopupView
 internal struct ProgrammingLanguagesView: ViewFactory, WebViewHandler {
-    /// Action that happens when a language is tapped
-    let completionHandler: Callback
+    /// Programming language's collection
+    let languages: [ProgrammingLanguage]
     
+    init(languages: [ProgrammingLanguage] = ProgrammingLanguage.allCases) {
+        self.languages = languages
+    }
+
     @ViewBuilder
     /// Creates the main Content View
     /// - Returns ProgrammingLanguagesView ContentView
     func createContentView() -> some View {
-        HorizontalCarouselView(items: ProgrammingLanguage.allCases) { tappedLanguageIndex in
-            // - MARK: TODO Implementation
-            let selectedLanguage: ProgrammingLanguage = ProgrammingLanguage.allCases[tappedLanguageIndex]
-            self.completionHandler(selectedLanguage)
+        HorizontalCarouselView(items: self.languages) {
+            self.update(subject: .init(self.languages[$0].url))
         }
     }
 }

@@ -9,9 +9,7 @@ import SwiftUI
 
 /// Contacts subview presented by the PopupView
 internal struct ContactsView: ViewFactory, ContactsScreen {
-    /// Action that happens when a contact is tapped
-    let completionHandler: Callback
-    
+
     @ViewBuilder
     /// Creates the main Content View
     /// - Returns ContactsView ContentView
