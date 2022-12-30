@@ -202,6 +202,8 @@
 		F22E08812818EA4900EB4768 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 		F22E08832818F2F300EB4768 /* ProgrammingLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingLanguage.swift; sourceTree = "<group>"; };
 		F22E08852818F2FA00EB4768 /* MainScreenSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenSubview.swift; sourceTree = "<group>"; };
+		F2516C3F295F9825002BC77F /* CITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = CITestPlan.xctestplan; path = Tests/TestPlans/CITestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
+		F2516C42295F9A87002BC77F /* DevTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; name = DevTestPlan.xctestplan; path = AboutMe.xcodeproj/DevTestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
 		F260D83E295C7C9E00D2CD15 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		F260D843295CA95500D2CD15 /* MainScreenSubview+TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenSubview+TestUtils.swift"; sourceTree = "<group>"; };
 		F26202AB295DEEE900153972 /* URL+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Utils.swift"; sourceTree = "<group>"; };
@@ -377,6 +379,15 @@
 				F26202AB295DEEE900153972 /* URL+Utils.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2516C41295F99E1002BC77F /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				F2516C42295F9A87002BC77F /* DevTestPlan.xctestplan */,
+				F2516C3F295F9825002BC77F /* CITestPlan.xctestplan */,
+			);
+			path = TestPlans;
 			sourceTree = "<group>";
 		};
 		F260D842295CA93700D2CD15 /* Extensions */ = {
@@ -783,6 +794,7 @@
 		F295BECF2821B14F00B30346 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				F2516C41295F99E1002BC77F /* TestPlans */,
 				F297A3162824CE00009D5AE5 /* Models */,
 				F2BD670A2818B7A7009701ED /* UnitTests */,
 				F2BD67142818B7A7009701ED /* UITests */,
