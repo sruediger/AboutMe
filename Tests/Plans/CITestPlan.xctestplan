@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "37C9AD71-3518-4CA1-BED3-CD00A19E81FE",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:AboutMe.xcodeproj",
+        "identifier" : "F2BD67062818B7A7009701ED",
+        "name" : "AboutMeTests"
+      }
+    },
+    {
+      "skippedTests" : [
+        "PopupViewUITests\/testOpenAchievementsWebView()",
+        "PopupViewUITests\/testOpenAppsWebView()",
+        "PopupViewUITests\/testOpenContactsWebView()",
+        "PopupViewUITests\/testOpenLanguagesWebView()",
+        "PopupViewUITests\/testScrollLanguages()",
+        "PopupViewUITests\/testScrollSkills()"
+      ],
+      "target" : {
+        "containerPath" : "container:AboutMe.xcodeproj",
+        "identifier" : "F2BD67102818B7A7009701ED",
+        "name" : "AboutMeUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

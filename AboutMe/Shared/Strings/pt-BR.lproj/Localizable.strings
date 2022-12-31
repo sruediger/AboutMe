@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  AboutMe
+
+  Created by Sérgio Ruediger on 03/05/22.
+  
+*/
+
+// Static Texts (STX)
+"STXMainTitle" = "Sobre mim";
+"STXOccupation" = "Desenvolvedor iOS & engenheiro de software";
+"STXLocation" = "Brasília, Brasil";
+"STXDescription" = "Sou bacharelando em Ciências da Computação e atualmente estou atuando como desenvolvedor iOS. Meu objetivo é solucionar problemas e desafios através de aplicativos ou softwares da melhor forma possível, desde o planejamento e desenvolvimento até o valor agregado ao cliente e produto.";
+
+// Buttons (BTN)
+"BTNLanguages" = "Linguagens";
+"BTNSkills" = "Habilidades";
+"BTNApps" = "Aplicativos";
+"BTNAchievements" = "Conquistas";
+"BTNExperiences" = "Experiências";
+"BTNContact" = "Contato";
+
+// Skills Sections (SKS)
+"SKSiOSDev" = "Desenvolvimento iOS";
+"SKSTechSkills" = "Habilidades técnicas";
+"SKSDatabases" = "Bancos de dados";
+
+// Soft Skills (SFT)
+"SFTTeamWork" = "Trabalho em equipe";
+"SFTCommunication" = "Comunicação";
+"SFTProblemSolving" = "Resolução de problemas";
+"SFTOrganization" = "Organização";
+"SFTCuriosity" = "Curiosidade";
+"SFTCreativity" = "Criatividade";
+"SFTPerseverance" = "Perseverança";
+"SFTResourcefulness" = "Proatividade";
+
+// Apps Sections (APS)
+"APSMadeByMe" = "Feitos por mim";
+"APSCollabs" = "Colaborações";
+
+// Experiences Sections (EXS)
+"EXSEducation" = "Educação";
+"EXSProfessional" = "Profissional";
+
+// Experience Item Title (EIT)
+"EITUCB" = "Universidade Católica de Brasília";
+"EITFreela" = "Desenvolvedor freelancer";
+
+// Experience Item Description (EID)
+"EIDComputerScience" = "Bacharelado em Ciência da Computação";
+"EIDDeveloperAcademy" = "Capacitação em desenvolvimento iOS";
+"EIDFreela" = "Solucionador de problemas através de aplicativos";
+"EIDFreelaTime" = "atualmente";
+
+// Achievements (ACH)
+"ACHSwiftWWDCBody" = "Escolhido como um de 350 vencedores mundiais, meu projeto para a edição desse ano foi uma cena interativa sobre segurança da informação que demonstra na prática a importância de ter conhecimento sobre o tema, além de dar uma breve introdução ao mesmo.";
+"ACHEcampBody" = "Entrepreneur Camp é uma iniciativa da Apple para estimular o crescimento de negócios baseados em aplicativos com potencial através de mentorias, workshops exclusivos e muito mais. %@ foi escolhido como um dos aplicativos selecionados para a edição do final de 2022.";
